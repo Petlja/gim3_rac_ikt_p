@@ -39,13 +39,23 @@ description:
     - Час 10. Практична вежба
 
 lessons:
-  - title: Час 1. Увод у рачунарску графику
+  - title: Рачунарска графика
+    folder: 1_РГ
+    guid: 160c2ee6-8bbb-49c5-a1b2-5668eacd7527
+    description: Предлекција
+    activities:
+      - type: reading
+        title: Рачунарска графика
+        file: Рачунарска_графика.rst
+        description: #opciono
+        guid: f89c7e23-215e-4251-9e31-da35e4e6f6ea
+  - title: 1. Увод у рачунарску графику
     folder: Час 1. Увод у рачунарску графику
     guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
     description: Прва лекција
     activities:
       - type: reading
-        title: Час. Увод у рачунарску графику
+        title: Увод у рачунарску графику
         file: Час_Увод_у_рачунарску_графику.rst
         description: #opciono
         guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
@@ -57,13 +67,13 @@ lessons:
     archived-activities: # ne smeta ni ako se ostave drugi atribudi iz aktivnosti, ali se gleda samo guid
       - guid: de4d8ced-7457-4257-a156-250bdb711d65
       - guid: 22752682-f23f-4df7-b590-e22780fda0a3
-  - title: Час 2. Радно окружење програма за обраду растерске графике
+  - title: 2. Радно окружење програма за обраду растерске графике
     folder: Час 2. Радно окружење програма за обраду растерске графике
     guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
     description:  Друга лекција
     activities:
       - type: reading
-        title: Час. Радно окружење програма за обраду растерске графике
+        title: Радно окружење програма за обраду растерске графике
         file: Час_Радно_окружење_програма_за_обраду_растерске_графике.rst
         description: #opciono
         guid: 4576c9a4-2071-4a21-b221-a646477e05be 
@@ -77,13 +87,13 @@ lessons:
         file: Квиз_Радно_окружење_програма_за_обраду_растерске_графике.rst
         description: ...
         guid: 0bad2e4e-6886-4e8d-bdac-d978c6fe326b
-  - title: Час 3. Оптимизација слике за штампање и ради објављивања на интернету
+  - title: 3. Оптимизација слике за штампање и ради објављивања на интернету
     folder: Час 3. Оптимизација слике за штампање и ради објављивања на интернету
     guid: 74c04e04-f7e3-41e4-a870-89fc52b5ac54
     description:  Трећа лекција
     activities:
       - type: reading
-        title: Час. Оптимизација слике за штампање и ради објављивања на интернету
+        title: Оптимизација слике за штампање и ради објављивања на интернету
         file: Час_Оптимизација_слике_за_штампање_и_ради_објављивања_на_интернету.rst
         description: #opciono
         guid: 7fc7537f-de6d-49cc-97fa-04de9739de0d
@@ -97,23 +107,23 @@ lessons:
         file: Квиз_Оптимизација_слике_за_штампање_и_ради_објављивања_на_интернету.rst
         description: ...
         guid: 619d965d-2506-4ad8-8dda-90f325a7c1e5
-  - title: Час 4. Практична вежба
+  - title: 4. Практична вежба
     folder: Час 4. Практична вежба
     guid: 07a6abd5-4232-40e7-90f8-eee4ce286f2c
     description:  Четврта лекција
     activities:
       - type: reading
-        title: Час. Практична вежба
+        title: Практична вежба
         file: Час_Практична_вежба1.rst
         description: #opciono
         guid: d9317990-83bb-4c4c-b622-0763cd7b44c8
-  - title: Час 5. Обрада растерске слике
+  - title: 5. Обрада растерске слике
     folder: Час 5. Обрада растерске слике
     guid: 64ae34d2-55c0-4e2c-a892-c00b943bbc53
     description:  Пета лекција
     activities:
       - type: reading
-        title: Час. Обрада растерске слике
+        title: Обрада растерске слике
         file: Час_Обрада_растерске_слике.rst
         description: #opciono
         guid: 434f2a47-a4f1-4e49-ba2d-41ed81dccb9a
@@ -122,23 +132,23 @@ lessons:
         file: Квиз_Обрада_растерске_слике.rst
         description: ...
         guid: ec98bc43-ef03-486e-8b04-90441602158a
-  - title: Час 6. Практична вежба
+  - title: 6. Практична вежба
     folder: Час 6. Практична вежба
     guid: 8299ffd1-3ebe-4490-bf59-51fafabd0647
     description:  Шеста лекција
     activities:
       - type: reading
-        title: Час. Практична вежба
+        title: Практична вежба
         file: Час_Практична_вежба2.rst
         description: #opciono
         guid: 12bfa4b4-c3f8-4c44-953d-2cb7468d77af
-  - title: Час 7. Радно окружење програма за креирање векторске графике
+  - title: 7. Радно окружење програма за креирање векторске графике
     folder: Час 7. Радно окружење програма за креирање векторске графике
     guid: 52179839-3357-4735-90ed-9cc0de0d4dbe
     description:  Седма лекција
     activities:
       - type: reading
-        title: Час. Радно окружење програма за креирање векторске графике
+        title: Радно окружење програма за креирање векторске графике
         file: Час_Радно_окружење_програма_за_креирање_векторске_графике.rst
         description: #opciono
         guid: 00610992-65df-4994-a124-30e327ff3ee7
@@ -152,13 +162,13 @@ lessons:
         file: Квиз_Радно_окружење_програма_за_креирање_векторске_графике.rst
         description: ...
         guid: 0982f3fc-7c7c-4cf6-b286-b94173f895d6
-  - title: Час 8. Цртање основних графичких елемената
+  - title: 8. Цртање основних графичких елемената
     folder: Час 8. Цртање основних графичких елемената
     guid: be334505-9915-47f7-8df7-854aa194fde8
     description:  Осма лекција
     activities:
       - type: reading
-        title: Час. Цртање основних графичких елемената
+        title: Цртање основних графичких елемената
         file: Час_Цртање_основних_графичких_елемената.rst
         description: #opciono
         guid: 9d67115b-acf0-4e91-a859-fc380b13f5bb
@@ -172,13 +182,13 @@ lessons:
         file: Квиз_Цртање_основних_графичких_елемената.rst
         description: ...
         guid: cf1e79fb-f9af-450b-b5ec-2a889e7b2fb6
-  - title: Час 9. Операције над објектима
+  - title: 9. Операције над објектима
     folder: Час 9. Операције над објектима
     guid: a5bee795-4f08-429a-8059-de60ec3c12d0
     description:  Девета лекција
     activities:
       - type: reading
-        title: Час. Операције над објектима
+        title: Операције над објектима
         file: Час_Операције_над_објектима.rst
         description: #opciono
         guid: 00994394-e3d7-4292-a691-0d5e59fc480f
@@ -192,13 +202,13 @@ lessons:
         file: Квиз_Операције_над_објектима.rst
         description: ...
         guid: 6f83d9fa-8d5d-4149-a0ea-5b5e091e7d95
-  - title: Час 10. Практична вежба
+  - title: 10. Практична вежба
     folder: Час 10. Практична вежба
     guid: fab4fd40-5a52-48ce-8957-c5af6e72b697
     description:  Десета лекција
     activities:
       - type: reading
-        title: Час. Практична вежба
+        title: Практична вежба
         file: Час_Практична_вежба3.rst
         description: #opciono
         guid: 8912ebb0-cd77-44f3-a971-0d4fc39780f5

@@ -116,9 +116,9 @@
 Оријентацију слике можеш да мењаш тако што из менија Image одабереш опцију Transform. Одабиром ове опције отвориће се листа опција које можеш применити на слици, и то:
 
 •	Flip Horizontally – одабиром ове опције слику преврћеш по хоризонтали;
-•	Rotate 180o – одабиром ове опције слику ротираш за 180 степени;
-•	Rotate 90o counter-clockwise – одабиром ове опције слику ротираш за 90 степени у смеру казаљке на сату;
-•	Rotate 90o lockwise - одабиром ове опције слику ротираш за 90 степени у смеру супротном од казаљке на сату;
+•	Rotate :math: '180^o' – одабиром ове опције слику ротираш за 180 степени;
+•	Rotate :math: '90^o' counter-clockwise – одабиром ове опције слику ротираш за 90 степени у смеру казаљке на сату;
+•	Rotate :math: '90^o' lockwise - одабиром ове опције слику ротираш за 90 степени у смеру супротном од казаљке на сату;
 •	Flip Vertically - одабиром ове опције слику преврћеш по вертикали.
 
 Питање:
@@ -127,11 +127,11 @@
 .. mchoice:: L32P3
     :answer_a: Flip Horizontally
     :feedback_a: Нетачно    
-    :answer_b: Rotate 180o
+    :answer_b: Rotate :math:'180^o'
     :feedback_b: Нетачно
-    :answer_c: Rotate 180o
+    :answer_c: Rotate :math:'180^o'
     :feedback_c: Нетачно
-    :answer_d: Rotate 90o lockwise
+    :answer_d: Rotate :math:'90^o' lockwise
     :feedback_d: Нетачно
     :answer_e: Flip Vertically
     :feedback_e: Тачно
@@ -145,7 +145,7 @@
 
     Коју од техника треба применити тако да слика изгледа овако: 
 
-    .. image:: ../../_images/L32S6.png
+    .. image:: ../../_images/L32S6_1.png
         :width: 200px
         :align: center
     
@@ -216,7 +216,7 @@ Rounded corners (Заобљене ивице) (3),
 
 Ако желиш да селектујеш све области или предмете исте боје можеш да користиш алатку |opcija6|, притиснеш тастер U са тастатуре или одабереш опцију Tools → Selection Tools → Select by Color. Када кликнеш на неку област или објекат, сви пиксели на слици који имају сличну вредност боје биће селектовани.
 
-.. image:: ../../_images/L32S21.png
+.. image:: ../../_images/L32S21_1.png
     :width: 700px
     :align: center
 

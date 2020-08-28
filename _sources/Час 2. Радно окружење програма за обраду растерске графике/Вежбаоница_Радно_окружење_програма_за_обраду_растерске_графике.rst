@@ -16,7 +16,7 @@
 Вежба 2.
 ~~~~~~~~
 
-Преузети слику са линка: 
+Преузети слику са `линкa <../../_images/spomenik.jpg>`_: 
 
 .. image:: ../../_images/Slika5.jpg
     :width: 600px
@@ -36,5 +36,5 @@
 
 Сачувај слику на којој је примењена опција:
 
--  Rotate 90o counter-clockwise под именом SpomenikRotacija1, 
+-  Rotate :math: '90^o' counter-clockwise под именом SpomenikRotacija1, 
 -  Flip Vertically под именом SpomenikRotacija2.

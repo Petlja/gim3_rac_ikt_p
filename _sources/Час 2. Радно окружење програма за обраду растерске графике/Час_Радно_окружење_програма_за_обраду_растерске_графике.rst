@@ -127,11 +127,11 @@
 .. mchoice:: L32P3
     :answer_a: Flip Horizontally
     :feedback_a: Нетачно    
-    :answer_b: Rotate :math:'180^o'
+    :answer_b: Rotate :math:`180^o`
     :feedback_b: Нетачно
-    :answer_c: Rotate :math:'180^o'
+    :answer_c: Rotate :math:`90^o` counter-clockwise
     :feedback_c: Нетачно
-    :answer_d: Rotate :math:'90^o' lockwise
+    :answer_d: Rotate :math:`90^o` clockwise
     :feedback_d: Нетачно
     :answer_e: Flip Vertically
     :feedback_e: Тачно

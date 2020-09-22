@@ -31,13 +31,11 @@
 .. mchoice:: L39P3
     :answer_a: правих линија
     :feedback_a: Тачно    
-    :answer_b: не
-    :feedback_b: Нетачно
-    :answer_c: неправилних линија
-    :feedback_c: Тачно
-    :answer_d: не
-    :feedback_d: Нетачно
-    :correct: a,c
+    :answer_b: неправилних линија
+    :feedback_b: Тачно
+    :answer_c: геометријске облике: квадрта и круг.
+    :feedback_c: Нетачно
+    :correct: a,b
 
 	Које све облике можеш да нацрташ помоћу алатке Draw freehand lines? Означи све тачне одговоре.
 

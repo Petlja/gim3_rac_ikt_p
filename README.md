@@ -1,8 +1,8 @@
-# Baze podataka za četvrti razred gimnazije društveni i opšti smer 
+# Računarska grafika za treći razred gimnazije 
 
-Ovaj repozitorijum posvećen je kursu za Baze podataka za četvrti razred gimnazije društveni i opšti smer. 
+Ovaj repozitorijum posvećen je kursu za Računarsku grafiku za treći razred gimnazije . 
 
-Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/4655/0](https://petlja.org/kurs/4655/)
+Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/487/0](https://petlja.org/kurs/487/)
 
 Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim4_rac_baze_d/releases
 

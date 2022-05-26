@@ -4,13 +4,13 @@ Ovaj repozitorijum posvećen je kursu za Računarsku grafiku za treći razred gi
 
 Kurs je na Petljom portalu dotupan ovde: [https://petlja.org/kurs/487/0](https://petlja.org/kurs/487/)
 
-Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim4_rac_baze_d/releases
+Kurs možete itegrisati u svoj LMS koristeći SCORM pakete koji se mogu preuzeti sa: https://github.com/Petlja/gim3_rac_ikt_p/releases
 
 ## Konverzija u *HTML*
 
 U ovom repozitorijumu se nalazi izvorna forma sadržaja koju pomoću alata [PetljaDoc](https://github.com/Petlja/PetljaDoc) možete konvertovati u skup *HTML* strana.
 
-Na https://petlja.github.io/gim4_rac_baze_d možete pregledati na taj način dobijene *HTML* strane.
+Na https://petlja.github.io/gim3_rac_ikt_p možete pregledati na taj način dobijene *HTML* strane.
 
 ## License
 

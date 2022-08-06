@@ -24,14 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nimgame.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -120,49 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/nimgame.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -384,22 +344,22 @@
   <div class="section" id="id1">
 <h1>Вежбаоница. Цртање основних графичких елемената<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
-<dl class="simple">
-<dt>Вежбаоница је место где ћеш имати прилику да провежбаш:</dt><dd><ul class="simple">
-<li><p>креирање векторске слику у одабраном програму;</p></li>
+<p>Вежбаоница је место где ћеш имати прилику да провежбаш:</p>
+<ul class="simple">
+<li><p>креирање векторске слике у одабраном програму;</p></li>
 <li><p>употребу алатки за цртање основних графичких елемената;</p></li>
 <li><p>коришћење алатки за креирање текста.</p></li>
 </ul>
-</dd>
-</dl>
 
     </p></div></div>
 <div class="section" id="id2">
 <h2>Вежба 1.<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Отвори нов документ у програму Inkscape;
+<p>Отвори нови документ у програму Inkscape;
 Подеси величину странице на A4 и оријентиши је тако да буде постављена вертикално.
 Постави мрежу са почетком у 0,0, јединицу мреже у милиметрима и размак између линија 5 милиметара.</p>
 <p>Сачувај документ.</p>
@@ -408,21 +368,21 @@
 <h2>Вежба 2.<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Отвори документ из претходног задатка (Вежба 1.)
 Напиши текст Крагујевац, коме је фонт Cambria, величина 80px, боја зелена, примењена опција за постављање слова у индексу и експонету, као и размак између слова 30.
-Тако да изгледа као на слици:</p>
+Текст треба да изгледа као на слици:</p>
 <a class="reference internal image-reference" href="../_images/L38S32.png"><img alt="../_images/L38S32.png" class="align-center" src="../_images/L38S32.png" style="width: 400px;" /></a>
 <p>Сачувај документ.</p>
 </div>
 <div class="section" id="id4">
 <h2>Вежба 3.<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
-<p>Отвори нов документ у програму Inkscape;
-Подеси величину странице на A4 и оријентиши је тако да буде постављена хотизонтално.
+<p>Отвори нови документ у програму Inkscape;
+Подеси величину странице на A4 и оријентиши је тако да буде постављена хоризонтално.
 Користећи алатку Calligraphy (Калиграфија) напиши своје име.</p>
 <p>Сачувај документ.</p>
 </div>
 <div class="section" id="id5">
 <h2>Вежба 4.<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>Отвори нов документ у програму Inkscape;
-Подеси величину странице на A4 и оријентиши је тако да буде постављена хотизонтално.</p>
+Подеси величину странице на A4 и оријентиши је тако да буде постављена хоризонтално.</p>
 <p>Уради следеће задатке:</p>
 <ul class="simple">
 <li><p>Нацртај правоугаоник са страницама 3,5 cm и 5 cm.</p></li>
@@ -433,7 +393,7 @@
 </div>
 <div class="section" id="id6">
 <h2>Вежба 5.<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
-<p>Отвори нов документ у програму Inkscape;
+<p>Отвори нови документ у програму Inkscape;
 Подеси величину странице на A4 и оријентиши је тако да буде постављена хотизонтално.</p>
 <ul class="simple">
 <li><p>Нацртај квадрат са страницом 9cm.</p></li>

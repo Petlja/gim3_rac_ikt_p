@@ -24,14 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nimgame.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -120,49 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/nimgame.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -384,16 +344,16 @@
   <div class="section" id="id1">
 <h1>Вежбаоница. Радно окружење програма за креирање векторске графике<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
-<dl class="simple">
-<dt>Вежбаоница је место где ћеш имати прилику да провежбаш:</dt><dd><ul class="simple">
+<p>Вежбаоница је место где ћеш имати прилику да провежбаш:</p>
+<ul class="simple">
 <li><p>подешавање опција радног окружења;</p></li>
 <li><p>отварање нове или постојеће слике;</p></li>
 </ul>
-</dd>
-</dl>
 
     </p></div></div>
 <div class="section" id="id2">
@@ -402,8 +362,8 @@
 Уради следеће радње:</p>
 <ul class="simple">
 <li><p>Креирај празну страницу димензије 272x385 mm. Постави да страница буде водоравно постављена.</p></li>
-<li><p>Постави прву водоравну помоћну линију, зелене боје на координате X = 0 px, Y = 480 px, под углом од 0 степени и дати јој име „Горња зелена”.</p></li>
-<li><p>Постави другу помоћну линију, црвене боје, релативно одмакнуту од прве за -100 px по Y оси, под углом од 0 степени.</p></li>
+<li><p>Постави прву водоравну помоћну линију зелене боје на координате X = 0 px, Y = 480 px, под углом од 0 степени и дај јој име „Горња зелена”.</p></li>
+<li><p>Постави другу помоћну линију црвене боје, релативно одмакнуту од прве за -100 px по Y оси, под углом од 0 степени.</p></li>
 <li><p>Трећу помоћну линију постави на координате X = 0 px и Y = 380 px под углом од 4,1 степени.</p></li>
 <li><p>Креирај квадратну мрежу, размака 2 cm по X оси и 3 cm по Y оси и укључи опцију да се приказују тачке уместо линија.</p></li>
 <li><p>Зумирај документ на ширину странице.</p></li>

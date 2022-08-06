@@ -24,14 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nimgame.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -120,49 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/nimgame.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -384,14 +344,16 @@
   <div class="section" id="id1">
 <h1>Час. Радно окружење програма за креирање векторске графике<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
-<dt>На овом часу научићеш о:</dt><dd><ul class="simple">
-<li><p>креирању векторске слику у одабраном програму;</p></li>
-<li><p>припреми за цртање векторске графике;</p></li>
-<li><p>цртању векторских објеката.</p></li>
+<dt>На овом часу научићеш да:</dt><dd><ul class="simple">
+<li><p>креираш векторске слике у одабраном програму;</p></li>
+<li><p>урадиш припрему за цртање векторске графике;</p></li>
+<li><p>црташ векторске објекте.</p></li>
 </ul>
 </dd>
 </dl>
@@ -414,9 +376,10 @@
 
         </div>
         </div>
-            <p>Векторска графика је дефинисана једначинама које одређују црте, облике и положаје. Састоји се првенствено од објекта у слици. Објекти могу бити линије, кругови, квадрати, троуглови, спирале или други облици.
-Векторске слике су обично конструисане од линија. Уместо да слику црташ тачку по тачку, у векторској графици слику црташ математичким функцијама.
-Векторска графика може се бесконачно повећавати и смањивати. Без обзира на то колико великом учините своју слику, увек изгледа савршено. Заправо графика може изгледати и боље када је увећана зато што су кривуље глађе.</p>
+            <p>Векторска графика је дефинисана једначинама које одређују линије, облике и положаје. Слика код векторске графике се састоји од објеката.  Објекти могу бити линије, кругови, квадрати, троуглови, спирале или други облици.
+Векторске слике су обично конструисане од линија.Ове линије које чине облике описане су математичким функцијама и програм их тако памти. Због тога се векторска графика може
+повећавати и смањивати без икакавих губитака квалитета јер се постојећи облици увек изнова исцртвају по истој функцији али са различитим параметрима. Зато без обзира на то колико
+великом учините своју слику, увек изгледа савршено. Често графика изгледа и боље када је увећана зато што су кривуље глађе.</p>
 <p>Током ових часова бавићеш се креирањем векторске графике.</p>
 <p>Векторску графику можеш да креираш и обрађујеш у бројним програмима. Неки од њих су  Inkscape, Corel Draw и Adobe Illustrator. У овом разреду, упознаћеш се са основним техникама за креирање и обраду дигиталних слика у програму Inkscape.</p>
 <p>Програм можеш да преузмеш са интернет странице <a class="reference external" href="https://inkscape.org/en/download">https://inkscape.org/en/download</a>.</p>
@@ -424,7 +387,7 @@
 
     <div  id="8lEIXFeHiRM" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/8lEIXFeHiRM/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -442,14 +405,21 @@
 </div>
 <div class="section" id="id4">
 <h3>Отварање новог документа<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>По правилу креирање векторске слике започиње цртањем на празном документу иако је могуће цртати и на неком постојећем документу.  Празну страну користиш када желиш да црташ, бојиш, формираш различите објекте, и сличног. Креирање нове векторске слике врши се тако што одабереш опцију New из менија File. Одабиром ове опције отвара се прозор као на слици.
+<p>По правилу креирање векторске слике започиње цртањем на празном документу иако је могуће цртати и на неком постојећем документу.
+Празну страну користиш када желиш да црташ, бојиш, формираш различите објекте, и слично. Креирање нове векторске слике врши се тако што одабереш опцију New из менија File.
+Одабиром ове опције отвара се прозор као на слици.
 Покретањем програма Inkscape отвара се нови документ формата SVG (Scalable Vector Graphics). Радно окружење програма Inkscape приказано је на доњој слици.</p>
 <a class="reference internal image-reference" href="../_images/L37S3.png"><img alt="../_images/L37S3.png" class="align-center" src="../_images/L37S3.png" style="width: 700px;" /></a>
-<p>Централно место радног окружења чини страница на коју можеш да поставиш различите објекте. Кликом на мени File и одабиром опције Document Properties отвориће се прозор са више картица. У оквиру картице Page можеш да промениш величину (Page Size) и оријентацију (Portrait, Landscape) странице, као и јединицу мере (Units).</p>
+<p>Централно место радног окружења чини страница на коју можеш да поставиш различите објекте. Кликом на мени File и одабиром опције Document Properties отвориће се прозор са више
+картица. У оквиру картице Page можеш да промениш величину (Page Size) и оријентацију (Portrait, Landscape) странице, као и јединицу мере (Units).</p>
 <a class="reference internal image-reference" href="../_images/L37S4.png"><img alt="../_images/L37S4.png" class="align-center" src="../_images/L37S4.png" style="width: 700px;" /></a>
-<p>У одељку Page Size  можеш да одабереш величину странице одабиром неке од понуђених величина (одређених стандардних формата као што су А0, А1, А3, А4,…). У одељку Custom Size можеш да дефинишеш ширину (Width) и висину (Height) новоформиране слике, која може бити приказана у пикселима, инчима, центиметрима итд. (мерну јединицу мењаш из падајуће листе). Ако величину уписујеш ручно, потребно је посебно да упишеш ширину и посебно висину или можеш да за уношење вредности  користиш стрелице за горе и доле.
+<p>У одељку Page Size  можеш да одабереш величину странице одабиром неке од понуђених величина (одређених стандардних формата као што су А0, А1, А3, А4,…).
+У одељку Custom Size можеш да дефинишеш ширину (Width) и висину (Height) новоформиране слике, која може бити приказана у пикселима, инчима, центиметрима итд.
+(мерну јединицу мењаш из падајуће листе). Ако величину уписујеш ручно, потребно је посебно да упишеш ширину и посебно висину или можеш да за уношење вредности
+користиш стрелице за горе и доле.
 У одељку Orientation на брз начин можеш да промениш оријентацију, односно усмерење документа, и то усправно (Portrait) или положено (Landscape).
-Осим величине документа и оријентације, у падајућој листи Units можеш да одабереш  мерну јединицу коју желиш да користиш, а која зависи од намене цртежа на коме радиш. Можеш да одабереш пикселе ако креираш графика (банер или лого) за неку интернет страницу, или инчи, милиметри, центиметри, метри, или неке друге од понуђених јединица.</p>
+Осим величине документа и оријентације, у падајућој листи Units можеш да одабереш  мерну јединицу коју желиш да користиш, а која зависи од намене цртежа на коме радиш.
+Можеш да одабереш пикселе ако креираш графику (банер или лого) за неку интернет страницу, или инчи, милиметри, центиметри, метри, или неке друге од понуђених јединица.</p>
 <p>У оквиру картице Guides могуће је активирати приказ помоћних линија (вођица) на страници.  Ове линије можеш да користиш за прецизно постављање објеката на страницу. Помоћне линије постављаш тако што кликнеш на лењир (хоризонтални или вертикални) и, држећи притиснут примарни тастер миша, повлачиш линију под жељеним углом. Двоструким кликом на линију отвара се помоћни мени Guideline у оквиру кога подешаваш назив маргине (Label), боју, позицију или угао линије.</p>
 <a class="reference internal image-reference" href="../_images/L37S5.png"><img alt="../_images/L37S5.png" class="align-center" src="../_images/L37S5.png" style="width: 700px;" /></a>
 <p>Означену помоћну линију можеш да обришеш тако што притиснеш тастер [Delete].</p>
@@ -459,7 +429,7 @@
 <div class="section" id="id5">
 <h3>Чување и извоз слике<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
 <p>Слику можеш да чуваш и коришћењем опције File → Save или File → Save Аs. Слика је тада сачувана у формату .svg који можеш да отвориш само у Inkscapeу.
-Јако је важно да знаш да слику сачувану у .svg формату можеш да отвориш на другом дигиталном уређају само ако и на том другом уређају имаш инсталиран програм Inkscape.</p>
+Важно је да знаш да слику сачувану у .svg формату можеш да отвориш на другом дигиталном уређају само ако и на том другом уређају имаш инсталиран програм Inkscape.</p>
 <p>Ако желиш да слику отвориш на неком другом дигиталном уређају, слику мораш да сачуваш у PNG формату. За то је потребно да користиш опцију File → Export PNG Image → Export.</p>
 <p>Одабиром ове опције отвара се прозор у коме бираш како желиш да извезеш дату слику. Одабиром једне од картица Page, Drawing, Selection и Custom бираш да ли желиш да извезеш целу страну, само цртеж, само означени део слике или  нешто произвољно.</p>
 <a class="reference internal image-reference" href="../_images/L37S7.png"><img alt="../_images/L37S7.png" class="align-center" src="../_images/L37S7.png" style="width: 400px;" /></a>
@@ -467,21 +437,27 @@
 </div>
 <div class="section" id="id6">
 <h3>Отварање постојеће слике<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<p>Слику преузету са интернета, скенирану или направљену дигиталним уређајем, отварамо у програму за обраду растерске графике одабиром опције File → Open. Одабиром ове опције отвара се прозор из кога бираш место, тачније фасциклу у којој је сачувана слика. Кликом на дугме Open отвориће се слика на којој можеш да примениш неколико различитих техника за уређивање исте.</p>
-<p>Често ће се дешавати да мораш да отвориш већ сачувану слику у .svg формату ради неких измена или копирања неких делова слике у други документ. Постојећи документ отвараш одабиром опције File → Open, или комбинацијом тастера CTRL + O. Одабиром било које од ових опција отвара се прозор из кога бираш место, тачније фасциклу у којој се налази сачувана слика. Кликом на дугме Open отвориће се слика на којој можеш да примениш неколико различитих техника за уређивање исте.
-Поред опције File → Open за отварање постојећег документа можeш користити и опцију File → Import. На овај начин је могуће убацити неки слику у тренутно активни документ, тј. документ у коме тренутно радиш. Одабиром ове опције отвара се прозор из кога бираш место, тачније фасциклу у којој се налази сачувана слика. Кликом на дугме Open отвориће се прозор у коме можеш да подесиш како ће та слика бити убачена, и кликом на дугме ОК слика је уметнута на страницу.</p>
+<p>Слику преузету са интернета, скенирану или направљену дигиталним уређајем, отвараш у програму за обраду растерске графике одабиром опције File → Open.
+Одабиром ове опције отвара се прозор из кога бираш место, тачније фасциклу у којој је сачувана слика. Кликом на дугме Open отвориће се слика на којој можеш да примениш
+неколико различитих техника за уређивање исте.</p>
+<p>Често ће се дешавати да мораш да отвориш већ сачувану слику у .svg формату ради неких измена или копирања неких делова слике у други документ. Постојећи документ отвараш одабиром опције File → Open, или комбинацијом тастера CTRL + O.
+Одабиром било које од ових опција отвара се прозор из кога бираш место, тачније фасциклу у којој се налази сачувана слика. Кликом на дугме Open отвориће се слика на
+којој можеш да примениш неколико различитих техника за уређивање исте.
+Поред опције File → Open за отварање постојећег документа можeш користити и опцију File → Import. На овај начин је могуће уметнути неку слику у тренутно активни документ,
+тј. документ у коме тренутно радиш. Одабиром ове опције отвара се прозор из кога бираш место, тачније фасциклу у којој се налази сачувана слика.
+Кликом на дугме Open отвориће се прозор у коме можеш да подесиш како ће та слика бити уметнута и кликом на дугме ОК слика је уметнута на страницу.</p>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
-<dl class="simple">
-<dt><strong>Укратко</strong></dt><dd><ul class="simple">
+<p><strong>Укратко</strong></p>
+<ul class="simple">
 <li><p>Векторска графика представља начин приказивања слике помоћу објеката (геометријских облика).</p></li>
 <li><p>Векторска графика може се неограничено увећавати без губитка квалитета.</p></li>
 <li><p>Најчешће коришћени типови (формати) векторских датотека су: SVG, PDF, CDR, DWG.</p></li>
 </ul>
-</dd>
-</dl>
 
     </p></div></div>
 </div>

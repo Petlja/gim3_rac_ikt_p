@@ -24,14 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nimgame.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -120,49 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/nimgame.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -384,41 +344,44 @@
   <div class="section" id="id1">
 <h1>Час. Оптимизација слике за штампање и ради објављивања на интернету<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
-<dl class="simple">
-<dt>На овом часу научићеш о:</dt><dd><ul class="simple">
+<p>На овом часу научићеш да:</p>
+<ul class="simple">
 <li><p>обрађујеш растерску слику у изабраном програму;</p></li>
-<li><p>оптимизује креирану слику за приказ на различитим медијима;</p></li>
-<li><p>одабере одговарајући формат записа слика.</p></li>
+<li><p>оптимизујеш креирану слику за приказ на различитим медијима;</p></li>
+<li><p>одабереш одговарајући формат записа слика.</p></li>
 </ul>
-</dd>
-</dl>
 
     </p></div></div>
-<p>Слика коју припремамо за интернет разликује се од слике коју припремамо за штампање. Оне се разликује по резолуцији слике, односно броју тачака по инчу и модела боје. За штампање је потребно да имаш слику већег квалитете у CMYK моделу боја, док је за интернет довољна и слика слабијег квалитета у RGB моделу боја.</p>
-<p>Поступак којим дигиталну слику подешаваш за постављање на интернету назива се оптимизација. Крајњи циљ оптимизације је добијеш што квалитетније слике са одређеним ограничењем њене димензије (дужине и висине) и величине, тачније количином бајтова које заузима у меморији. Овим у ствари желимо да направимо равнотежу између квалитета и величине датотека.</p>
+<p>Припрема слике за објављивање на интернету се разликује од припреме слике за штампање по резолуцији слике, односно броју тачака по инчу и моделу боје.
+За штампање је потребно да слик буде већег квалитета у CMYK моделу боја, док је за интернет довољна и слика слабијег квалитета у RGB моделу боја.</p>
+<p>Поступак којим дигитална се дигитална слика подешава за постављање на интернет назива се оптимизација. Крајњи циљ оптимизације је добијање што квалитетније слике са одређеним ограничењем њене димензије (дужине и висине) и величине, тачније количином бајтова које заузима у меморији. Овим у ствари желимо да направимо равнотежу између квалитета и величине датотека.</p>
 <p>Ако желиш да припремиш слику за штампање, потребно је да одабрана резолуција, фотографије буде 300 ppi, а једнобојне илустрације 600 ppi. Поред тога важно је да све боје морају бити приказане у CMYK моделу боја.
 Важно је да знаш да када се смањује резолуција слике, повећава се ширина и висина слике, док ако повећаваш резолуцију слике смањује се ширина и висина слике. То је добро да запамтиш јер се приликом промене резолуције слике мења само број пиксела који ће се приказати по инчу дате слике, а не колико пиксела чини ту слику.</p>
 <p>За промену резолуције слике одабере се Image → Print Sizе. Кликом на дату опцију отвара се прозор у коме је могуће мењати резолуцију слике.</p>
 <a class="reference internal image-reference" href="../_images/L33S1.png"><img alt="../_images/L33S1.png" class="align-center" src="../_images/L33S1.png" style="width: 400px;" /></a>
 <p>Слике које желиш да поставиш на интернет такође треба да буду врхунског квалитета, слично као и слике које су припремљене за штампање. Већина дигиталних слика које се објављују на интернету су ниске резолуције, углавном 72 dpi.</p>
-<p>Опсецање је први корак у оптимизацији фотографије. Опсецањем је одређен тачан садржај фотографије и уклоњен је вишак који није потребан за даљи рад на тој слици или фотографији.</p>
-<p>Следећи корак је додатно уређивање слике након одсецања, тако да изгледа онако како нама одговара. У већини случајева слика треба да се посветли или потамни, да се на слици повећа или смањи контраст, да се изоштри, замути или додају специјални ефекти.</p>
+<p>Први корак у оптимизацији слике је најчешће опсецање. Опсецањем се одређује садржај фотографије уклањањем њених непотребних делова.
+Након овог корака следе кораци за додатно уређивање слике, а то су најчешће повећање или смањење неких параметара слике попут осветљености, контраста,
+оштрине или додавање специјалних ефеката.</p>
 <div class="section" id="id2">
 <h2>Промена нивоа обојености, осветљености и контраста<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Ако су слике светле или тамне, нису оштре, имају прејаке боје или имају неке друге недостатке могуће их је модифоковати, тако што користиш алатке из менија Color.
-Над одабраном делу слике или целом сликом можеш да извршиш додатне корекције попут промене нивоа осветљености, контраста или обојености.
-У оквиру менија Colors можеш да да подесиш равнотежу боје опцијом Color Balance, промениш контраст или осветљеност опцијом Brightness-Contrast, промениш обојеност опцијом Colorize  и извршиш друга подешавања.</p>
-<p>Над одабраном делу слике или целом сликом можеш да извршиш додатне корекције попут промене нивоа осветљености или контраста (разлику између најтамнијих и најсветлијих области). Ако желиш да просветлиш, потамниш или да направиш контраст, потребно је да одабереш опцију Brightness-Contrast. Кликом на дату опцију отвара се прозор у коме је могуће да мењаш осветљење или контраст.</p>
+<p>Ако су слике превише светле или тамне, нису оштре, имају прејаке боје или имају неке друге недостатке могуће их је модификовати коришћењем алатки из менија Color.
+Над одабраним делом слике или целом сликом можеш да извршиш додатне корекције попут промене нивоа осветљености, контраста или обојености.
+У оквиру менија Colors можеш да подесиш равнотежу боје опцијом Color Balance, промениш контраст или осветљеност опцијом Brightness-Contrast, промениш обојеност опцијом Colorize и извршиш друга подешавања.</p>
+<p>Над одабраним делом слике или целом сликом можеш да извршиш додатне корекције попут промене нивоа осветљености или контраста (разлику између најтамнијих и најсветлијих области). Ако желиш да просветлиш, потамниш или да направиш контраст, потребно је да одабереш опцију Brightness-Contrast. Кликом на дату опцију отвара се прозор у коме је могуће да мењаш осветљење или контраст.</p>
 <a class="reference internal image-reference" href="../_images/L33S2.png"><img alt="../_images/L33S2.png" class="align-center" src="../_images/L33S2.png" style="width: 400px;" /></a>
-<p>Ако је слика превише тамна, потребно је у одељку Brightness помераш клизач у десну страну или одабереш стрелицу на горе којим се повећава вредност осветљења на слици. А ако је слика превише светла, потребно је клизач помераш улево или одабереш стрелицу на доле којим се смањује вредност осветљења на слици.</p>
-<p>Готово се увек врши комбинација осветљења и контраста. Тако да је препорука да се променом осветљења мења и контраст. Вредности за контраст се подешавају на исти начин коришћењем клизача или стрелица.</p>
+<p>Ако је слика превише тамна, потребно је да у одељку Brightness помераш клизач у десну страну или одабереш стрелицу на горе којим се повећава вредност осветљења на слици.
+А ако је слика превише светла, потребно је да клизач помераш улево или одабереш стрелицу на доле којим се смањује вредност осветљења на слици.</p>
+<p>Најчешће је ради постизања оптималног изгледа слике потребно комбиновати промену осветљења и контраста. Вредности за контраст се подешавају на исти начин коришћењем клизача или стрелица.</p>
 <p>Након подешавања жељеног осветљења и контраста, довољно је да кликнеш на дугме ОК чиме потврђујеш своја подешавања.</p>
 <p>Ако желиш да подесиш да дигитална слика буде приказана у нијансама сиве, то можеш да урадиш одабиром опције Color → Desaturate → Color to Gray.</p>
 <a class="reference internal image-reference" href="../_images/L33S3.png"><img alt="../_images/L33S3.png" class="align-center" src="../_images/L33S3.png" style="width: 600px;" /></a>
-<p>Исту акцију можеш да примениш и коришћењем опције опције Color → Desaturate → Desaturate.  Кликом на дату опцију отвара се прозор у коме из листе Mode бираш неку од опција.</p>
+<p>Исту акцију можеш да примениш и коришћењем опције Color → Desaturate → Desaturate.  Кликом на дату опцију отвара се прозор у коме из листе Mode бираш неку од опција.</p>
 <a class="reference internal image-reference" href="../_images/L33S4.png"><img alt="../_images/L33S4.png" class="align-center" src="../_images/L33S4.png" style="width: 400px;" /></a>
 <p>Кликом на опцију Color Balance отвара се прозор у коме подешаваш количину тиркизне, љубичасте или жуте боје на слици, уз могућност да додаш и црвене, зелене или плаве боје.</p>
 <a class="reference internal image-reference" href="../_images/L33S5.png"><img alt="../_images/L33S5.png" class="align-center" src="../_images/L33S5.png" style="width: 400px;" /></a>
@@ -428,12 +391,13 @@
 <h2>Филтери<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Филтери су посебна врста алата која се користи за постизање различитих ефеката на слици попут замућености или изоштравања фотографије или различитих уметничких ефеката.  Филтере можемо да применимо на слој или селекцију. Њима приступамо кроз мени Filters (Филтери).</p>
 <a class="reference internal image-reference" href="../_images/L33S6.png"><img alt="../_images/L33S6.png" class="align-center" src="../_images/L33S6.png" style="width: 400px;" /></a>
-<p>Филтери су подељени у неколико категорија од којих су најчешће коришћени:
-­
--  Blur (Замућење)  – скуп филтера који замућују слој или селекцију.
-­-  Enhance (Побољшај) – скуп филтера за изоштравање слике, отклањање мрља, црвенила очију…
-­-  Distorts (Изобличења)  –  скуп филтера са ефектима мозаика, ветра, таласа,…
-­-  Artistic (Уметнички) – скуп филтера који стварају уметничке ефекте као што је изглед уља на платну, витража…</p>
+<p>Филтери су подељени у неколико категорија од којих су најчешће коришћени:</p>
+<ul class="simple">
+<li><p>Blur (Замућење) – скуп филтера који замућују слој или селекцију.</p></li>
+<li><p>Enhance (Побољшај) – скуп филтера за изоштравање слике, отклањање мрља, црвенила очију…</p></li>
+<li><p>Distorts (Изобличења) – скуп филтера са ефектима мозаика, ветра, таласа,…</p></li>
+<li><p>Artistic (Уметнички) – скуп филтера који стварају уметничке ефекте као што је изглед уља на платну, витража…</p></li>
+</ul>
 <p>Кликом на већину филтера отвара се помоћни мени у којем можеш да видиш како ће изгледати слика након примене филтера, те да измениш додатне параметре за постизање жељеног резултата. Померањем клизача можеш да прегледаш било који део слике. Притиском на тастер OK потврђујеш примену одабраног филтера.</p>
 <p>На доњој слици у оквиру 4 правоугане селекцијe примењени различити филтери, Pixelize (1), Sharpen (2), Watherpixels (3) и Mosaic (4).</p>
 <a class="reference internal image-reference" href="../_images/L33S7.png"><img alt="../_images/L33S7.png" class="align-center" src="../_images/L33S7.png" style="width: 700px;" /></a>
@@ -444,12 +408,14 @@
 У случају да је опција <a class="reference internal" href="../_images/L33S9.png"><img alt="s2" src="../_images/L33S9.png" style="width: 30px;" /></a> укључена (изглед закључаног катанца) задржава се пропорција, тачније однос између ширине и висине дигиталне слике.
 Приликом промене једне димензије слике аутоматски ће се мењати друга димензија задржавајући пропорцију димензија слике. У случају да је катанац откључан (раскинут) <a class="reference internal" href="../_images/L33S10.png"><img alt="s3" src="../_images/L33S10.png" style="width: 30px;" /></a>, промена једне димензије слике не утиче на промену друге димензије.</p>
 <p>Веома је важно да се јединица мере подеси на број тачака (пиксела) јер се она користи за димензије слика на интернету, и да се слика резолуције подеси на 72 dpi.</p>
-<p>Ако желиш да видиш реалну величину фотографије из главног менија се може изабрати опцију Vew, Actual pixel size (Alt+Ctrl+0).</p>
-<p>И на крају одабиром опције Cubic из падајуће листе Interpolation oбезбеђујеш алгоритам програма одреди јасноћу слике, тачније програм мора да креира нове информације о пикселима да би се извршила модификација слике. Опцијом Cubic рачуна се боја сваког пиксела као просечна боја осам најближих пиксела на оригиналној слици. То обично даје најбољи резултат, али природно захтева више времена. Тачније, ако слика има димензију 1250 x 980 тачака, а треба да се смањи на 550 тачака по дужој страни, програм треба да израчуна како да, информације забележене на 1250 тачака сведе на 550 тачака и да да резултат који је најближи оригиналу.</p>
+<p>Ако желиш да видиш реалну величину фотографије из главног менија изабери опцију Vew, Actual pixel size (Alt+Ctrl+0).</p>
+<p>И на крају одабиром опције Cubic из падајуће листе Interpolation oбезбеђујеш да алгоритам програма одреди јасноћу слике, односно да програм мора да креира нове информације о пикселима да би се извршила модификација слике. Опцијом Cubic рачуна се боја сваког пиксела као просечна боја осам најближих пиксела на оригиналној слици. То обично даје најбољи резултат, али природно захтева више времена. Тачније, ако слика има димензију 1250 x 980 тачака, а треба да се смањи на 550 тачака по дужој страни, програм треба да израчуна како да, информације забележене на 1250 тачака сведе на 550 тачака и да да резултат који је најближи оригиналу.</p>
 <a class="reference internal image-reference" href="../_images/L33S11.png"><img alt="../_images/L33S11.png" class="align-center" src="../_images/L33S11.png" style="width: 400px;" /></a>
-<p>Коначно, оптимизацију слике завршавамо избором одговарајућег формата датотеке и подешавањем параметара компресије. Важно је да знаш да су подржани формати слика које ћеш поставити на интернету су jpg, gif и png.</p>
+<p>Коначно, оптимизацију слике завршаваш избором одговарајућег формата датотеке и подешавањем параметара компресије. Важно је да знаш да су подржани формати слика које ћеш поставити на интернету су jpg, gif и png.</p>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -458,7 +424,7 @@
 <li><p>Већина дигиталних слика које се објављују на интернету су ниске резолуције, углавном 72 dpi.</p></li>
 <li><p>Ако желиш да припремиш слику за штампање, потребно је да одабрана резолуција, фотографије буде 300 ppi, а једнобојне илустрације 600 ppi.</p></li>
 <li><p>Опсецање је први корак у оптимизацији фотографије.</p></li>
-<li><p>Други корак је додатно уређивање слике након одсецања, тако да изгледа онако како нама одговара.</p></li>
+<li><p>Други корак је додатно уређивање осветљености, контраста или оштрине слике након одсецања, тако да изгледа онако како нама одговара.</p></li>
 <li><p>Трећи корак је смањивање димензија, односно свођење резолуције на потребну вредност.</p></li>
 <li><p>Коначно, оптимизацију слике завршавамо избором одговарајућег формата датотеке и подешавањем параметара компресије.</p></li>
 <li><p>Подржани формати слика које се постављају на интернету су jpg, gif и png.</p></li>

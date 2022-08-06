@@ -24,14 +24,9 @@
     <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
     <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
     <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/simanim.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pycode.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/p5js.css" />
     <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/dbDirective.css" />
     <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/regex-check.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/nimgame.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
@@ -120,49 +115,14 @@
     <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/notes.js"></script>
     <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blockly_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/blocks_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/python_compressed.js"></script>
-    <script type="text/javascript" src="../_static/blockly/msg-sr.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/utilities.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_errors.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/ast_node_visitor.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/pytifa.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/abstract_interpreter_definitions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/python_to_blockly.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/imported.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/class.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comment.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/comprehensions.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/dict.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/if.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/io.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/lists.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/sets.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/loops.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/parking.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/tuple.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/turtles.js"></script>
-    <script type="text/javascript" src="../_static/blockpy/blocks/text.js"></script>
-    <script type="text/javascript" src="../_static/blockpy-modal.js"></script>
-    <script type="text/javascript" src="../_static/simanim.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.16.1/full/pyodide.js"></script>
-    <script type="text/javascript" src="../_static/pycode.js"></script>
-    <script type="text/javascript" src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
-    <script type="text/javascript" src="../_static/p5js.js"></script>
     <script type="text/javascript" src="../_static/gallery.js"></script>
-    <script type="text/javascript" src="../_static/dbDirective.js"></script>
-    <script type="text/javascript" src="../_static/sql.js"></script>
     <script type="text/javascript" src="../_static/associations.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
     <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/regex-check.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/regex-check-i18n.sr-Cyrl.js"></script>
-    <script type="text/javascript" src="../_static/nimgame.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.en.js"></script>
-    <script type="text/javascript" src="../_static/nimgame-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
     <script type="text/javascript" src="../_static/translations.js"></script>
     <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
@@ -384,7 +344,9 @@
   <div class="section" id="id1">
 <h1>Час. Цртање основних графичких елемената<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">
@@ -400,15 +362,16 @@
 <p>Програм Inkscape омогућава једноставно креирање основних геометријских облика избором одговарајуће алатке <a class="reference internal" href="../_images/L38S1.png"><img alt="q1" src="../_images/L38S1.png" style="width: 50px;" /></a> кутије са алаткама.</p>
 <div class="section" id="id2">
 <h2>Цртање правоугаоних и овалних облика<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
-<p>Правоугаоник и квадрат исцртаваш помоћу алатке <a class="reference internal" href="../_images/L38S2.png"><img alt="q2" src="../_images/L38S2.png" style="width: 30px;" /></a>. Правоугаоник исцртаваш тако што кликнеш на страницу и развучеш га држећи притиснут примарни тастер миша. Када дођеш до жељене величине потребно је да отпустиш тастер миша.</p>
+<p>Правоугаоник и квадрат исцртаваш помоћу алатке <a class="reference internal" href="../_images/L38S2.png"><img alt="q2" src="../_images/L38S2.png" style="width: 30px;" /></a>. Правоугаоник исцртаваш тако што кликнеш на страницу страницу и држећи притиснут примарни тастер миша помераш позицију миша. Када дођеш до жељене величине потребно је да отпустиш тастер миша.</p>
 <p>Када је објекат исцртан на њему можеш уочити квадратиће на угловима (горњем десном и доњем левом) који можеш да користиш за промену величине нацртаног објекта, и кружић (у горњем десном углу) који можеш да користиш за подешавање заобљености ивица датог објекта.</p>
 <p>Квадрат исцртаваш на исти начин као и правоугаоник уз држање притиснутог тастера Ctrl.</p>
 <a class="reference internal image-reference" href="../_images/L38S3.png"><img alt="../_images/L38S3.png" class="align-center" src="../_images/L38S3.png" style="width: 500px;" /></a>
 <p>Приликом одабира опције за цртање правоугаоника или квадрата отвориће се палета са алаткама у којој подешаваш ширину (1) и висину правоугаоника (2) уношењем вредности или коришћењем дугмића <a class="reference internal" href="../_images/L38S12.png"><img alt="q4" src="../_images/L38S12.png" style="width: 30px;" /></a> за промену вредности ових димензија. Ако желиш да промениш радијус објекта, тачније креираш заобљене углове тако што унесеш жељене бројне вредности у поља Rx или Ry. Промену мерних јединица мењаш из падајуће листе (4).</p>
 <a class="reference internal image-reference" href="../_images/L38S4.png"><img alt="../_images/L38S4.png" class="align-center" src="../_images/L38S4.png" style="width: 900px;" /></a>
-<p>Овални облик (елипсу) исцртаваш помоћу алатке <a class="reference internal" href="../_images/L38S5.png"><img alt="q3" src="../_images/L38S5.png" style="width: 30px;" /></a>. Елипсу исцртаваш тако што кликнеш на страницу и развлачиш држећи притиснут примарни тастер миша све док не добијеш жељену већилину објекта, и затим, отпустиш тастер миша.  Круг исцртаваш на исти начин као и елипсу уз држање притиснутог тастера Ctrl.</p>
+<p>Овални облик (елипсу) исцртаваш помоћу алатке <a class="reference internal" href="../_images/L38S5.png"><img alt="q3" src="../_images/L38S5.png" style="width: 30px;" /></a>. Елипсу исцртаваш тако што кликнеш на страницу и држећи притиснут примарни тастер мишаа помераш миш све док не добијеш жељену величину објекта, а затим отпустиш тастер миша.
+Круг исцртаваш на исти начин као и елипсу уз држање притиснутог тастера Ctrl.</p>
 <a class="reference internal image-reference" href="../_images/L38S6.png"><img alt="../_images/L38S6.png" class="align-center" src="../_images/L38S6.png" style="width: 500px;" /></a>
-<p>Приликом одабира опције за цртање елипсе или круга отвориће се палета са алаткама у којој подешаваш вредности пречника по хоризонтали Rx или вертикали Ry (1) уношењем жељене вредности или коришћењем дугме <a class="reference internal" href="../_images/L38S12.png"><img alt="q4" src="../_images/L38S12.png" style="width: 30px;" /></a>. Осим тога имаш и могућност да од круга креираш кружне исечке (2) и лукове (3).</p>
+<p>Приликом одабира опције за цртање елипсе или круга отвориће се палета са алаткама у којој подешаваш вредности пречника по хоризонтали Rx или вертикали Ry (1) уношењем жељене вредности или коришћењем дугмета <a class="reference internal" href="../_images/L38S12.png"><img alt="q4" src="../_images/L38S12.png" style="width: 30px;" /></a>. Осим тога имаш и могућност да од круга креираш кружне исечке (2) и лукове (3).</p>
 <a class="reference internal image-reference" href="../_images/L38S7.png"><img alt="../_images/L38S7.png" class="align-center" src="../_images/L38S7.png" style="width: 900px;" /></a>
 <p>Од нацртаног круга можеш да креираш кружне исечке или лукове. За цртање лука користиш бели круг чијим превлачењем добијаш жељени облик или одабереш  одгоравајућу алатку за исцртавање кружног исечак, лука или се објекат враћа у почетно стање <a class="reference internal" href="../_images/L38S8.png"><img alt="q5" src="../_images/L38S8.png" style="width: 150px;" /></a>.</p>
 <a class="reference internal image-reference" href="../_images/L38S9.png"><img alt="../_images/L38S9.png" class="align-center" src="../_images/L38S9.png" style="width: 500px;" /></a>
@@ -416,7 +379,7 @@
 <p>Правилни многоугао исцртаваш тако што одабереш алатку <a class="reference internal" href="../_images/L38S10.png"><img alt="q6" src="../_images/L38S10.png" style="width: 30px;" /></a>. Када одабереш ову алатку отвара се линија са алаткама у којој одабереш алатку <a class="reference internal" href="../_images/L38S11.png"><img alt="q7" src="../_images/L38S11.png" style="width: 30px;" /></a> (1).
 Затим, можеш да унесеш број углова правилног многоугла или за то користиш <a class="reference internal" href="../_images/L38S12.png"><img alt="q4" src="../_images/L38S12.png" style="width: 30px;" /></a> (2) и вредност заобљавања угла (3).</p>
 <a class="reference internal image-reference" href="../_images/L38S13.png"><img alt="../_images/L38S13.png" class="align-center" src="../_images/L38S13.png" style="width: 900px;" /></a>
-<p>Правилан многоугао исцртаваш тако што кликнеш на страницу и држећи притиснут примарни тастер миша развлачиш га све док не добијеш жељену величину објекта, и затим, отпустиш тастер миша.
+<p>Правилан многоугао исцртаваш тако што кликнеш на страницу и држећи притиснут примарни тастер миша повлачиш миш све док не добијеш жељену величину објекта, а затим отпустиш тастер миша.
 Звезду исцртаваш на сличан начин,  одабереш алатку  <a class="reference internal" href="../_images/L38S14.png"><img alt="q8" src="../_images/L38S14.png" style="width: 30px;" /></a> (1). Затим, можеш да унесеш број углова, тачније кракова или за то користиш <a class="reference internal" href="../_images/L38S12.png"><img alt="q4" src="../_images/L38S12.png" style="width: 30px;" /></a> (2), вредност однос радијуса од најдубље тачке и радијуса најудаљеније тачке звезде (3), као и и вредност заобљавања угла (4).</p>
 <a class="reference internal image-reference" href="../_images/L38S15.png"><img alt="../_images/L38S15.png" class="align-center" src="../_images/L38S15.png" style="width: 900px;" /></a>
 <a class="reference internal image-reference" href="../_images/L38S16.png"><img alt="../_images/L38S16.png" class="align-center" src="../_images/L38S16.png" style="width: 500px;" /></a>
@@ -434,12 +397,38 @@
 <a class="reference internal image-reference" href="../_images/L38S21.png"><img alt="../_images/L38S21.png" class="align-center" src="../_images/L38S21.png" style="width: 400px;" /></a>
 <p>Помоћни мени Fill and Stroke можеш да покренеш и из менија Object → Fill and Stroke. У оквиру овог прозора можеш да изабереш једну од картица Fill, Stroke paint и Stroke style. У картици Fill подешаваш боју унутрашњости објекта. На овој картице можеш да одабереш једну од шест опција које се односе на врсту приказа боје унутар објекта, и то, респективно:</p>
 <a class="reference internal image-reference" href="../_images/L38S22.png"><img alt="../_images/L38S22.png" class="align-center" src="../_images/L38S22.png" style="width: 700px;" /></a>
-<p>X – означава да унутар објекта нема боје, тачније објекат је без боје;
-Flat color – што значи коришћење било које појединачне боје на елементу;
-Linear gradient – приказује се линеарни прелаз боја између минимално две боје;
-Mash gradieng – приказује се кружни (радијални) прелаз боја између минимално две боје;
-Pattern – означава да објекат може да буде обојен по неком узорку;
-Swatch – аутоматски се чувају последње одабране боје.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="colwidths-given docutils align-left">
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>X</p></td>
+<td><p>означава да унутар објекта нема боје, тачније објекат је без боје</p></td>
+</tr>
+<tr class="row-even"><td><p>Flat color</p></td>
+<td><p>означава коришћење било које појединачне боје на елементу</p></td>
+</tr>
+<tr class="row-odd"><td><p>Linear gradient</p></td>
+<td><p>приказује се линеарни прелаз боја између минимално две боје</p></td>
+</tr>
+<tr class="row-even"><td><p>Mash gradient</p></td>
+<td><p>приказује се кружни (радијални) прелаз боја између минимално две боје</p></td>
+</tr>
+<tr class="row-odd"><td><p>Pattern</p></td>
+<td><p>означава да објекат може да буде обојен по неком узорку</p></td>
+</tr>
+<tr class="row-even"><td><p>Swatch</p></td>
+<td><p>аутоматски се чувају последње одабране боје</p></td>
+</tr>
+</tbody>
+</table>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>Следеће што можеш одабрати је модел боје уношењем бројева за сваку компоненту боје, или једноставним кликом на сваку компоненту боје.
 Наравно, могуће је подесити и вредности замућења (Blur) или провидности (Opaticy) унутрашње области објекта. Предефинисана вредност за замућење је 0, а за провидност 100%.
 Вредности можеш мењати уношењем жељене вредности, коришћењем клизача или коришћењем дугмића <a class="reference internal" href="../_images/L38S12.png"><img alt="q4" src="../_images/L38S12.png" style="width: 30px;" /></a>.</p>
@@ -463,11 +452,15 @@ Swatch – аутоматски се чувају последње одабра�
 <div class="section" id="id6">
 <h2>Креирање текста<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>У програму за креирање векторске графике можеш да уносиш тест, креирајући наслове, банере, логое или натписе.</p>
-<p>За креирање текста потребно је да изабереш алатку <a class="reference internal" href="../_images/L38S30.png"><img alt="q15" src="../_images/L38S30.png" style="width: 30px;" /></a> и кликнеш на страницу, и затим започињеш уношење текста. Одабиром ове алатке отвара се низа алатки у којима можеш да подесиш врсту и величину слова, измениш хоризонтално и вертикално растојање између речи или слова, поставиш поравнање, креираш текст у експоненту или индексз, као и да ротираш слова.</p>
+<p>За креирање текста потребно је да изабереш алатку <a class="reference internal" href="../_images/L38S30.png"><img alt="q15" src="../_images/L38S30.png" style="width: 30px;" /></a> и кликнеш на страницу, и затим започињеш уношење текста.
+Одабиром ове алатке отвара се низа алатки у којима можеш да подесиш врсту и величину слова, измениш хоризонтално и вертикално растојање између речи или слова,
+поставиш поравнање, креираш текст у експоненту или индексу, као и да ротираш слова.</p>
 <a class="reference internal image-reference" href="../_images/L38S31.png"><img alt="../_images/L38S31.png" class="align-center" src="../_images/L38S31.png" style="width: 900px;" /></a>
 <p>Ако желимо да вршимо измене на већ унетом тексту, потребно је да га најпре селектујеш, а затим примењујеш жељене измене.</p>
 
-    <div class="course-box course-box-info">
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
             <p>
 <dl class="simple">

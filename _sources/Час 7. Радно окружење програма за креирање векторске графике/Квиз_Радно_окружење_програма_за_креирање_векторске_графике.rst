@@ -24,7 +24,7 @@
 
 .. mchoice:: L37P2
     :answer_a: File → Open
-    :feedback_a: Нетачно    
+    :feedback_a: Тачно    
     :answer_b: File → New
     :feedback_b: Нетачно
     :answer_c: File → Save 
@@ -33,9 +33,9 @@
     :feedback_d: Тачно
     :answer_e: File → Export PNG Image 
     :feedback_e: Нетачно
-    :correct: d
+    :correct: a, d
 
-	Која опција се користи за отварање постојеће слике или фотографије у програму Inkscape? Означи тачан одговор.
+	Које опције се користе за отварање постојеће слике или фотографије у програму Inkscape? Означи тачне одговоре.
 
 Питање 3.
 ~~~~~~~~~

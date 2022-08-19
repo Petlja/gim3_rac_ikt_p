@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Час. Радно окружење програма за обраду растерске графике</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = '3_razred_IKT_DigitalnaPismenost';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Primer_kurs';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Рачунарска графика</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_rg>
+                    <h5>Рачунарска графика</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_rg/rac_graf.html><div class="studioLecture" id=activity-rac_graf><i class="fas fa-file-alt activity-icon"></i>Рачунарска графика</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_uvod>
+                    <h5>1. Увод у рачунарску графику</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_uvod/1_1_cas.html><div class="studioLecture" id=activity-1_1_cas><i class="fas fa-file-alt activity-icon"></i>Увод у рачунарску графику</div></a>
+                <a href=../1_uvod/1_2_kviz.html><div class="studioLecture" id=activity-1_2_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Увод у рачунарску графику</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_program>
+                    <h5>2. Радно окружење програма за обраду растерске графике</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_program/2_1_uvod.html><div class="studioLecture" id=activity-2_1_uvod><i class="fas fa-file-alt activity-icon"></i>Радно окружење програма за обраду растерске графике</div></a>
+                <a href=../2_program/2_2_vez.html><div class="studioLecture" id=activity-2_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Радно окружење програма за обраду растерске графике</div></a>
+                <a href=../2_program/2_3_kviz.html><div class="studioLecture" id=activity-2_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Радно окружење програма за обраду растерске графике</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_optimizacija>
+                    <h5>3. Оптимизација слике за штампање и ради објављивања на интернету</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_optimizacija/3_1_cas.html><div class="studioLecture" id=activity-3_1_cas><i class="fas fa-file-alt activity-icon"></i>Оптимизација слике за штампање и ради објављивања на интернету</div></a>
+                <a href=../3_optimizacija/3_2_vez.html><div class="studioLecture" id=activity-3_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Оптимизација слике за штампање и ради објављивања на интернету</div></a>
+                <a href=../3_optimizacija/3_3_kviz.html><div class="studioLecture" id=activity-3_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Оптимизација слике за штампање и ради објављивања на интернету</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_vezba>
+                    <h5>4. Практична вежба</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_vezba/4_vezba.html><div class="studioLecture" id=activity-4_vezba><i class="fas fa-file-alt activity-icon"></i>Практична вежба</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_obrada_raster>
+                    <h5>5. Обрада растерске слике</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../5_obrada_raster/5_1_cas.html><div class="studioLecture" id=activity-5_1_cas><i class="fas fa-file-alt activity-icon"></i>Обрада растерске слике</div></a>
+                <a href=../5_obrada_raster/5_2_kviz.html><div class="studioLecture" id=activity-5_2_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Обрада растерске слике</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-6_vezba>
+                    <h5>6. Практична вежба</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../6_vezba/6_vezba.html><div class="studioLecture" id=activity-6_vezba><i class="fas fa-file-alt activity-icon"></i>Практична вежба</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-7_inkscape>
+                    <h5>7. Радно окружење програма за креирање векторске графике</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../7_inkscape/7_1_cas.html><div class="studioLecture" id=activity-7_1_cas><i class="fas fa-file-alt activity-icon"></i>Радно окружење програма за креирање векторске графике</div></a>
+                <a href=../7_inkscape/7_2_vez.html><div class="studioLecture" id=activity-7_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Радно окружење програма за креирање векторске графике</div></a>
+                <a href=../7_inkscape/7_3_kviz.html><div class="studioLecture" id=activity-7_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Радно окружење програма за креирање векторске графике</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-8_crtanje>
+                    <h5>8. Цртање основних графичких елемената</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../8_crtanje/8_1_cas.html><div class="studioLecture" id=activity-8_1_cas><i class="fas fa-file-alt activity-icon"></i>Цртање основних графичких елемената</div></a>
+                <a href=../8_crtanje/8_2_vez.html><div class="studioLecture" id=activity-8_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Цртање основних графичких елемената</div></a>
+                <a href=../8_crtanje/8_3_kviz.html><div class="studioLecture" id=activity-8_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Цртање основних графичких елемената</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-9_operacije>
+                    <h5>9. Операције над објектима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../9_operacije/9_1_cas.html><div class="studioLecture" id=activity-9_1_cas><i class="fas fa-file-alt activity-icon"></i>Операције над објектима</div></a>
+                <a href=../9_operacije/9_2_vez.html><div class="studioLecture" id=activity-9_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Операције над објектима</div></a>
+                <a href=../9_operacije/9_3_kviz.html><div class="studioLecture" id=activity-9_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Операције над објектима</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-10_vezba>
+                    <h5>10. Практична вежба</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../10_vezba/10_vez.html><div class="studioLecture" id=activity-10_vez><i class="fas fa-file-alt activity-icon"></i>Практична вежба</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Час. Радно окружење програма за обраду растерске графике<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            <p>
+<dl class="simple">
+<dt>На овом часу научићеш о:</dt><dd><ul class="simple">
+<li><p>обрађујеш и креираш растерску слику у изабраном програму;</p></li>
+<li><p>користи алате за уређивање и трансформацију слике.</p></li>
+</ul>
+</dd>
+</dl>
+
+    </p></div></div>
+<p>Хајде да се подсетимо!</p>
+<div class="section" id="id2">
+<h2>Питање:<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="true"  id="L32P1">
+            <p>Q-4:     Која од наведених тврђења карактеришу растерску графику? Означи све тачне одговоре.</p>
+
+            <li data-component="answer" data-correct id="L32P1_opt_a">Приликом повећавања слика губи на квалитету</li><li data-component="feedback" id="L32P1_opt_a">Тачно</li>
+            
+            <li data-component="answer" data-correct id="L32P1_opt_b">Слика која се састоји од матрице / мреже појединачних тачака (пиксела)</li><li data-component="feedback" id="L32P1_opt_b">Тачно</li>
+            
+            <li data-component="answer"  id="L32P1_opt_c">Графика која заузима мање меморијског простора</li><li data-component="feedback" id="L32P1_opt_c">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="L32P1_opt_d">Графика која заузима више меморијског простора</li><li data-component="feedback" id="L32P1_opt_d">Тачно</li>
+            
+            <li data-component="answer"  id="L32P1_opt_e">Слика се смањује и повећава без губитка</li><li data-component="feedback" id="L32P1_opt_e">Нетачно</li>
+            
+
+            </ul>
+            </div>
+            
+    <div class="note-wrapper technicalnote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/technicalnote-img.svg" class="note-image technicalnote-image" /> 
+        <div class="course-content">
+            <p>
+<p>У овом разреду, бавићемо се основним техникама измене дигиталних слика у програму за растерску графику Gimp 2. Овај програм је бесплатан за преузимање и коришћење и пружа бројне могућности за обраду и креирање дигиталне слике. Ради под оперативним системима Windows и Linux.
+Да бисмо инсталирали Gimp 2 на кућном рачунару, потребно је да посетимо интернет страницу <a class="reference external" href="https://www.gimp.org/downloads/">https://www.gimp.org/downloads/</a> и одатле покренемо инсталацију.</p>
+<p>Поступак инсталације датог програма можеш да погледаш на доњем видеу:</p>
+
+    <div  id="-jSiYBv9WeU" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/-jSiYBv9WeU/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal--jSiYBv9WeU" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal--jSiYBv9WeU">
+        </div>
+    </div>
+    
+    
+    
+    </p></div></div>
+<p>Током ових часова бавићеш се обрадом (уређивањем) дигиталне слике користећи постојеће (скениране или преузете са интернета) или креиране употребом фото-апарата или дигиталних уређаја.</p>
+<p>Без обзира да ли су слике преузете са интернета, скениране или направљене дигиталним уређајем, већина растерских слика захтева неку врсту обраде пре употребе. То може бити или једноставно прилагођавање дигиталног формата (исецање, промена колор модела), ретуширање ради побољшања изгледа или уклањања недостатака, коришћењем филтера којима се додају одређени ефекти, монтажа или комбиновање више слика за креирање сложених слика…</p>
+<div class="section" id="id3">
+<h3>Основна подешавања<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Пре него што започнеш рад у програму за обраду и креирање растерске слике добро би било да извршиш нека једноставна подешавања програма. За то, можеш да користиш опцију Preferences из менија Edit. Oдабиром ове опције отвара се прозор у коме можеш да подесиш изглед радног окружења, странице (да ли ће бити транспарентна или не), затим можеш подесити мерне јединице и резолуцију, и начин експортовања слике (одабереш подразумевани тип датотеке за експортовање) изглед помоћних линија (вођица) и мреже, додаш различите филтере, итд.</p>
+<a class="reference internal image-reference" href="../_images/L32S1.png"><img alt="../_images/L32S1.png" class="align-center" src="../_images/L32S1.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/L32S2.png"><img alt="../_images/L32S2.png" class="align-center" src="../_images/L32S2.png" style="width: 700px;" /></a>
+<p>Кликом на дугме ОК потврђујеш измене које су начињене.</p>
+</div>
+<div class="section" id="id4">
+<h3>Отварање новог документа<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Креирање нове растерске слике врши се одабиром опције New из менија File. Одабиром ове опције отвара се прозор као на слици.</p>
+<a class="reference internal image-reference" href="../_images/L32S3.png"><img alt="../_images/L32S3.png" class="align-center" src="../_images/L32S3.png" style="width: 500px;" /></a>
+<p>У падајућој листи Template дефинисане су димензије одређених стандардних формата као што су А0, А1, А3, А4,… формат.</p>
+<p>У одељку Image Size можеш да дефинишеш ширину (Width) и висину (Height) новоформиране слике, која може бити приказана у пикселима, инчима, центиметрима итд. (мерну јединицу мењаш из падајуће листе).</p>
+<p>Ако одабереш стандардизован формат, на пример А4 формат, у пољима за ширину и висину биће приказане аутоматски вредности тог формата.</p>
+<p>У овом прозору можеш да подесиш и оријентацију папира (платна) одабиром опција  Portrait и Landscape <a class="reference internal" href="../_images/L32S4.png"><img alt="opcija1" src="../_images/L32S4.png" style="width: 70px;" /></a>. Поред ове опције налази се дефинисана резолуција, у овом случају мисли се на густину пиксела на екрану. Већина монитора има оптималан графички приказ на 72 пиксела по инчу, међутим за штапмање било које врсте, нека устаљена вредност је 300 ppi (пиксела по инчу). То је због тога што људско око не може да примети разлику у квалитету слике изнад те цифре. Као и постављени RGB модел приказа боје.</p>
+<p>Одабиром опције Advanced Options отвара се листа у којој горе наведене опције можеш прилагодити својим потребама.</p>
+<a class="reference internal image-reference" href="../_images/L32S5.png"><img alt="../_images/L32S5.png" class="align-center" src="../_images/L32S5.png" style="width: 500px;" /></a>
+<p>Можеш променити резолуцију, одабрати како ће позадина бити попуњена. Позадина може бити бела (white),  провидна (Transparent) или одабрати неку шару сачињену од више боја (Pattern). Tранспарентна позадина се може сачувати само у одређеним екстензијама, од којих су најчешће .gif и .png.</p>
+<p>Важно је да знаш да се величина слике одређује на следећи начин:  физичка величина (cm) = димензије слике (пиксел) / резолуција екрана (ppi)*2,54</p>
+<p>На пример: Слика дужине 200 пиксела (једна димензија слике!) на екрану са резолуцијом 72 ppi имаће дужину од 7,05 cm.</p>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>Питање:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="L32P2">
+            <p>Колику ће дужину у центиметрима имати слика дужине 500 пиксела са резолуцијом од 300 ppi? Унеси вредност користећи запис са две десимале иза децималне тачке.</p>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^4.23$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <div class="section" id="id6">
+<h3>Отварање постојеће слике<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Слику преузету са интернета, скенирану или направљену дигиталним уређајем, отвараш у програму за обраду растерске графике одабиром опције File → Open.</p>
+<p>Одабиром ове опције отвара се прозор из кога бираш место, тачније фасциклу у којој је сачувана слика. Кликом на дугме Open отвориће се слика на којој можеш да примениш неколико различитих техника за уређивање исте.</p>
+</div>
+<div class="section" id="id7">
+<h3>Промена оријентације слике<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Често се дешава да дигитална слика која је направљена дигиталним уређајем није окренута онако како желиш.</p>
+<p>Оријентацију слике можеш да мењаш тако што из менија Image одабереш опцију Transform. Одабиром ове опције отвориће се листа опција које можеш применити на слици, и то:</p>
+<ul class="simple">
+<li><p>Flip Horizontally – одабиром ове опције слику преврћеш по хоризонтали;</p></li>
+<li><p>Rotate :math: ’180^o’ – одабиром ове опције слику ротираш за 180 степени;</p></li>
+<li><p>Rotate :math: ’90^o’ counter-clockwise – одабиром ове опције слику ротираш за 90 степени у смеру казаљке на сату;</p></li>
+<li><p>Rotate :math: ’90^o’ lockwise - одабиром ове опције слику ротираш за 90 степени у смеру супротном од казаљке на сату;</p></li>
+<li><p>Flip Vertically - одабиром ове опције слику преврћеш по вертикали.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>Питање:<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+
+            <div class="course-box course-box-question course-content">
+            <ul data-component="multiplechoice" data-multipleanswers="false"  id="L32P3">
+            <p>Q-5:     Дата је оригинална слика.</p>
+<a class="reference internal image-reference" href="../_images/L32S7.png"><img alt="../_images/L32S7.png" class="align-center" src="../_images/L32S7.png" style="width: 200px;" /></a>
+<p>Коју од техника треба применити тако да слика изгледа овако:</p>
+<a class="reference internal image-reference" href="../_images/L32S6_1.png"><img alt="../_images/L32S6_1.png" class="align-center" src="../_images/L32S6_1.png" style="width: 200px;" /></a>
+<p>Означи тачан одговор?</p>
+
+            <li data-component="answer"  id="L32P3_opt_a">Flip Horizontally</li><li data-component="feedback" id="L32P3_opt_a">Нетачно</li>
+            
+            <li data-component="answer"  id="L32P3_opt_b">Rotate :math:`180^o`</li><li data-component="feedback" id="L32P3_opt_b">Нетачно</li>
+            
+            <li data-component="answer"  id="L32P3_opt_c">Rotate :math:`90^o` counter-clockwise</li><li data-component="feedback" id="L32P3_opt_c">Нетачно</li>
+            
+            <li data-component="answer"  id="L32P3_opt_d">Rotate :math:`90^o` clockwise</li><li data-component="feedback" id="L32P3_opt_d">Нетачно</li>
+            
+            <li data-component="answer" data-correct id="L32P3_opt_e">Flip Vertically</li><li data-component="feedback" id="L32P3_opt_e">Тачно</li>
+            
+
+            </ul>
+            </div>
+            <div class="section" id="id9">
+<h3>Алатке за селекцију<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>У програму Gimp 2 постоји више алатки помоћу којих можеш да селектујеш (одабереш) жељени део слике. Све ове алатке се налазе у палети са алаткама – Toolbox (1), а можеш да их пронађеш и у оквиру менија Tools →  Selection Tools (2).</p>
+<a class="reference internal image-reference" href="../_images/2.1.png"><img alt="../_images/2.1.png" class="align-center" src="../_images/2.1.png" style="width: 800px;" /></a>
+<p>Део слике можеш да селектујеш употребом алатки:</p>
+<table class="colwidths-auto docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>алатка</strong></p></th>
+<th class="head"><p><strong>опција</strong></p></th>
+<th class="head"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>за правоугаону</p></td>
+<td><p><a class="reference internal" href="../_images/L32S9.png"><img alt="opcija2" src="../_images/L32S9.png" style="width: 50px;" /></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>овалну (елипсоидну)</p></td>
+<td><p><a class="reference internal" href="../_images/L32S10.png"><img alt="opcija3" src="../_images/L32S10.png" style="width: 50px;" /></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>селекцију слободним избором</p></td>
+<td><p><a class="reference internal" href="../_images/L32S11.png"><img alt="opcija4" src="../_images/L32S11.png" style="width: 50px;" /></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>издвајањем пиксела који имају сличне особине (суседне области сличне боје)</p></td>
+<td><p><a class="reference internal" href="../_images/L32S13.png"><img alt="opcija5" src="../_images/L32S13.png" style="width: 50px;" /></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>издвајањем пиксела који имају сличне особине (области исте боје на целој слици)</p></td>
+<td><p><a class="reference internal" href="../_images/L32S14.png"><img alt="opcija6" src="../_images/L32S14.png" style="width: 50px;" /></a></p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Кликом на једну од приказаних алатки, на пример правоугаону селекцију испод кутије са алаткама, отвара се простор у коме је могуће подесити њена својства.</p>
+<p>Најважнија својства су:</p>
+<p>­Mode (Режим) (1) – преклапање селекције (Прво дугме активира режиму коме се креирањем нове селекције уклања претходна, док друго дугме активира режим у коме се креирањем нове селекције задржава претходна) и
+­Feather edges (Мекане ивице) (2) – фини прелаз између селектованог и неселектованог дела слике. Одабиром ове опције можеш подесити и угао за креорање меканих, паперјастих ивица.</p>
+<a class="reference internal image-reference" href="../_images/2.2.png"><img alt="../_images/2.2.png" class="align-center" src="../_images/2.2.png" style="width: 800px;" /></a>
+<p>У зависности од избора алатке могу се приказати и друга својства као што су:</p>
+<p>Rounded corners (Заобљене ивице) (3),
+­Expand from Center (Рашири из средишта) (4) и слично.</p>
+<p>Селекцију у облику правоугаоника можеш да извршиш тако што одабереш алатку за правоугаону селекцију, притиснеш тастер R са тастатуре или одабереш опцију Tools → Selection Tools → Rectangle Select. Држећи притиснут примарни тастер миша, развлачиш правоугаоник до жељене величине и отпистиш тастер миша. Квадратну селекцију „исцртаваш” на исти начин као што радиш и код правоугаоне селекције, само што у исто време држиш и притиснут тастер Shift. Квадратну селекцију можеш да спроведеш ако подесиш својства задржавања односа Aspect ratio ширине и висине на 1:1 што значи да ће бити иста ширина и дужина селекције (5).</p>
+<a class="reference internal image-reference" href="../_images/L32S16.png"><img alt="../_images/L32S16.png" class="align-center" src="../_images/L32S16.png" style="width: 400px;" /></a>
+<p>Овалну селекцију „исцртаваш” тако што одабереш алатку за овалну селекцију (десним кликом на алатку за правоугаону селекцију отвара се падајућа листа из које бираш алатку), притиснеш тастер Е са тастатуре или одабереш опцију Tools → Selection Tools → Ellipse Select. Држећи притиснут примарни тастер миша, развучемо овални облик. Круг исцртавамо држећи притиснут тастер Shift или подешавањем својства задржавања односа ширине и висине 1:1.</p>
+<p>Неправилан облик селекције спроводиш тако што одабереш алатку за селекцију слободним изоборм, притиснеш тастер F са тастатуре или одабереш опцију Tools → Selection Tools → Free Select. Ову алатку примењујеш тако што поставиш курсор на део слике који желиш да селектујеш и. Држиш притиснут примарни тастер миша и исцртаваш жељени облик. Да би облик био затворен, процес селектовања мораш да завршиш у тачки из које је започето „исцртавање”.</p>
+<p>Ако желиш да селектујеш суседну област или објекат сличне боје можеш да користиш алатку за издвајање пиксела са сличним особинама, притиснеш тастер U са тастатуре или одабереш опцију Tools → Selection Tools → Fuzzy Select. Када кликнеш на неку област или објекат, пиксели око те тачке, а који имају сличну вредност боје биће такође селектовани.</p>
+<a class="reference internal image-reference" href="../_images/2.3.png"><img alt="../_images/2.3.png" class="align-center" src="../_images/2.3.png" style="width: 600px;" /></a>
+<p>Ако желиш да селектујеш све области или предмете исте боје можеш да користиш алатку за издвајање пиксела истих особина, притиснеш тастер U са тастатуре или одабереш опцију Tools → Selection Tools → Select by Color. Када кликнеш на неку област или објекат, сви пиксели на слици који имају сличну вредност боје биће селектовани.</p>
+<a class="reference internal image-reference" href="../_images/2.4.png"><img alt="../_images/2.4.png" class="align-center" src="../_images/2.4.png" style="width: 600px;" /></a>
+</div>
+<div class="section" id="id10">
+<h3>Опсецање (кроповање) слике<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>Врло често се дешава да не желиш да користиш читаву дигиталну слику, већ само један њен део. Тада треба да примениш технику опсецања (кроповања слике).</p>
+<p>У програму Gimp, слику можеш да опсечеш на више начина.</p>
+<ul class="simple">
+<li><p>Најједноставније је да изабереш алатку за кроповање, означиш део слике који желиш да опсечеш и, на тастатури, притиснеш тастер Enter. Алатка изгледа овако <a class="reference internal" href="../_images/L32S17.png"><img alt="opcija7" src="../_images/L32S17.png" style="width: 50px;" /></a></p></li>
+<li><p>Други начин је да алатком за селекцију одабереш део слике, а да затим примениш акцију Image → Crop to Selection.</p></li>
+</ul>
+<p>Коришћењем ове опције користиш да на дигиталној слици означиш део слике који желиш да задржиш. Остатак слике изван селектованог дела се одбацује, тачније одсеца.</p>
+<p>Скенирана фотографила или слика преузета са интернета често може имати бели оквир. Те белине око фотографија или слике увек треба уклонити, оне су вишак којим се повећава величина датотеке. Ако ти је белина око дигиталне слике потребна постоје начини да се то изведе, и нема потребе да се белина креира на самој слици.</p>
+</div>
+<div class="section" id="id11">
+<h3>Чување и извоз слике<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>Слику можеш да чуваш и коришћењем опције File → Save или File → Save Аs. Слика је тада сачувана у формату .xcf који можеш да отвориш само у Gimp-у.</p>
+<p>Јако је важно да знаш да слику сачувану у .xcf формату можеш да отвориш на другом дигиталном уређају само ако и на том другом уређају имаш инсталиран програм GIMP 2.</p>
+<p>Ако желиш да слику отвориш на неком другом дигиталном уређају, слику мораш да сачуваш у неком другом формату, као што је JPG, TIFF, PNG, PSD, GIF PDF, BMP. За то је потребно да користиш опцију File → Export Аs → Export.</p>
+<p>Одабиром ове опције отвара се прозор у коме бираш локацију, тачније фасциклу у којој чуваш слику (1), затим  уносиш име слике које желиш да сачуваш (2).</p>
+<a class="reference internal image-reference" href="../_images/2.5.png"><img alt="../_images/2.5.png" class="align-center" src="../_images/2.5.png" style="width: 720px;" /></a>
+<p>Затим, бираш формат у коме ће слика бити сачувана. Тачније, ако уместо почетно постављеног формата, желиш да одабереш неки други, нпр. Gif, png, … То радиш тако што кликнеш на знак + који се налази поред опције Select File Type (By Extension). Из листе понуђених формата бираш жељени (4).</p>
+<p>И затим, кликом на дугме Export, отвара се прозор у коме подешаваш квалитет слике, тако што помоћу клизача повећавамо или смањујемо квалитет слике</p>
+<a class="reference internal image-reference" href="../_images/L32S19.png"><img alt="../_images/L32S19.png" class="align-center" src="../_images/L32S19.png" style="width: 400px;" /></a>
+<p>Правило је да што је квалитет слике већи, слика ће заузимати више меморијског простора, док што је слика мањег квалитета, она заузима мање меморијског простора. Кликом на дугме Export потврђујеш своја подешавања и тиме је слика сачувана. Наизглед иста слика може да заузме различиту количину меморијског простора дигиталног уређаја.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            <p>
+<dl class="simple">
+<dt><strong>Укратко</strong></dt><dd><ul class="simple">
+<li><p>Пре него што започнеш рад у програму за обраду и креирање растерске слике добро би било да извршиш нека једноставна подешавања програма. За то, можеш да користиш опцију Preferences из менија Edit.</p></li>
+<li><p>Креирање нове растерске слике врши се одабиром опције New из менија File.</p></li>
+<li><p>Постојећу слику птвараш у програму за обраду растерске графике одабиром опције File → Open.</p></li>
+<li><p>Оријентацију слике можеш да мењаш тако што из менија Image одабереш опцију Transform.</p></li>
+<li><p>У програму Gimp 2 постоји више алатки помоћу којих можеш да селектујеш (одабереш) жељени део слике.</p></li>
+<li><p>Део слике можеш да селектујеш употребом алатки: за правоугаону, овалну (елипсоидну) , селекцију слободним избором, издвајањем пиксела који имају сличне особине (суседне области сличне боје, области исте боје на целој слици).</p></li>
+<li><p>У програму Gimp, слику можеш да опсечеш на више начина.</p></li>
+<li><p>Слику можеш да чуваш и коришћењем опције File → Save или File → Save Аs.</p></li>
+<li><p>Ако желиш да слику отвориш на неком другом дигиталном уређају, потребно да користиш опцију File → Export Аs → Export.</p></li>
+</ul>
+</dd>
+</dl>
+
+    </p></div></div>
+</div>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

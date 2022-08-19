@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Час. Увод у рачунарску графику</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = '3_razred_IKT_DigitalnaPismenost';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Primer_kurs';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Рачунарска графика</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_rg>
+                    <h5>Рачунарска графика</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_rg/rac_graf.html><div class="studioLecture" id=activity-rac_graf><i class="fas fa-file-alt activity-icon"></i>Рачунарска графика</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_uvod>
+                    <h5>1. Увод у рачунарску графику</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_uvod/1_1_cas.html><div class="studioLecture" id=activity-1_1_cas><i class="fas fa-file-alt activity-icon"></i>Увод у рачунарску графику</div></a>
+                <a href=../1_uvod/1_2_kviz.html><div class="studioLecture" id=activity-1_2_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Увод у рачунарску графику</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_program>
+                    <h5>2. Радно окружење програма за обраду растерске графике</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_program/2_1_uvod.html><div class="studioLecture" id=activity-2_1_uvod><i class="fas fa-file-alt activity-icon"></i>Радно окружење програма за обраду растерске графике</div></a>
+                <a href=../2_program/2_2_vez.html><div class="studioLecture" id=activity-2_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Радно окружење програма за обраду растерске графике</div></a>
+                <a href=../2_program/2_3_kviz.html><div class="studioLecture" id=activity-2_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Радно окружење програма за обраду растерске графике</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_optimizacija>
+                    <h5>3. Оптимизација слике за штампање и ради објављивања на интернету</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_optimizacija/3_1_cas.html><div class="studioLecture" id=activity-3_1_cas><i class="fas fa-file-alt activity-icon"></i>Оптимизација слике за штампање и ради објављивања на интернету</div></a>
+                <a href=../3_optimizacija/3_2_vez.html><div class="studioLecture" id=activity-3_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Оптимизација слике за штампање и ради објављивања на интернету</div></a>
+                <a href=../3_optimizacija/3_3_kviz.html><div class="studioLecture" id=activity-3_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Оптимизација слике за штампање и ради објављивања на интернету</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_vezba>
+                    <h5>4. Практична вежба</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_vezba/4_vezba.html><div class="studioLecture" id=activity-4_vezba><i class="fas fa-file-alt activity-icon"></i>Практична вежба</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_obrada_raster>
+                    <h5>5. Обрада растерске слике</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../5_obrada_raster/5_1_cas.html><div class="studioLecture" id=activity-5_1_cas><i class="fas fa-file-alt activity-icon"></i>Обрада растерске слике</div></a>
+                <a href=../5_obrada_raster/5_2_kviz.html><div class="studioLecture" id=activity-5_2_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Обрада растерске слике</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-6_vezba>
+                    <h5>6. Практична вежба</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../6_vezba/6_vezba.html><div class="studioLecture" id=activity-6_vezba><i class="fas fa-file-alt activity-icon"></i>Практична вежба</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-7_inkscape>
+                    <h5>7. Радно окружење програма за креирање векторске графике</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../7_inkscape/7_1_cas.html><div class="studioLecture" id=activity-7_1_cas><i class="fas fa-file-alt activity-icon"></i>Радно окружење програма за креирање векторске графике</div></a>
+                <a href=../7_inkscape/7_2_vez.html><div class="studioLecture" id=activity-7_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Радно окружење програма за креирање векторске графике</div></a>
+                <a href=../7_inkscape/7_3_kviz.html><div class="studioLecture" id=activity-7_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Радно окружење програма за креирање векторске графике</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-8_crtanje>
+                    <h5>8. Цртање основних графичких елемената</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../8_crtanje/8_1_cas.html><div class="studioLecture" id=activity-8_1_cas><i class="fas fa-file-alt activity-icon"></i>Цртање основних графичких елемената</div></a>
+                <a href=../8_crtanje/8_2_vez.html><div class="studioLecture" id=activity-8_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Цртање основних графичких елемената</div></a>
+                <a href=../8_crtanje/8_3_kviz.html><div class="studioLecture" id=activity-8_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Цртање основних графичких елемената</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-9_operacije>
+                    <h5>9. Операције над објектима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../9_operacije/9_1_cas.html><div class="studioLecture" id=activity-9_1_cas><i class="fas fa-file-alt activity-icon"></i>Операције над објектима</div></a>
+                <a href=../9_operacije/9_2_vez.html><div class="studioLecture" id=activity-9_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Операције над објектима</div></a>
+                <a href=../9_operacije/9_3_kviz.html><div class="studioLecture" id=activity-9_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Операције над објектима</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-10_vezba>
+                    <h5>10. Практична вежба</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../10_vezba/10_vez.html><div class="studioLecture" id=activity-10_vez><i class="fas fa-file-alt activity-icon"></i>Практична вежба</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Час. Увод у рачунарску графику<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            <p>
+<p>На овом часу научићеш о:</p>
+<ul class="simple">
+<li><p>појму рачунарске графике;</p></li>
+<li><p>принципима растерске и векторске графике;</p></li>
+<li><p>моделима приказа боја;</p></li>
+<li><p>форматима записа слика.</p></li>
+</ul>
+
+    </p></div></div>
+<p>Визуелно представљање информација на некој површини као што је зид, платно, папир, камен или екран дигиталног уређаја може се сматрати графиком.
+Неки од примера су: фотографије, цртежи, графикони, дијаграми, симболи, геометријски облици, карте инжењерски цртежи и остале врсте слика које нису текст.</p>
+<a class="reference internal image-reference" href="../_images/L31S1.png"><img alt="../_images/L31S1.png" class="align-center" src="../_images/L31S1.png" style="width: 800px;" /></a>
+<p>Неки од примера су: фотографије, цртежи, графикони, дијаграми, симболи, геометријски облици, карте или слично.
+Сви ови примери често се користе као визуелна замена за текст ради лакшег разумевања неког концепта или да га учине занимљивим, комбинујући при томе текст, илустрацију и боју.</p>
+<p>Слике које настају или се приказују уз помоћ дигиталних уређаја називају се <strong>рачунарска графика</strong>. Она обухвата обраду, стварање и чување сликовног (графичког) садржаја помоћу рачунара.
+Тачније, рачунарска графика припада визуелној уметности где корисник путем рачунара креира слике и визуално их мења вршећи истовремено њихову комбинацију са информацијама
+и материјалима из реалног света. Појавом персоналних рачунара почео је и убрзани развој рачунарске графике.</p>
+<p>Данас се рачунарска графика користи у различитим подручјима свакодневног живота од индустрије, едукације, забаве,….</p>
+<p>Графику на рачунару, можемо поделити према начину на који се у меморији памте подаци о слици, тачније према основним градивним елементима слике.
+Постоје два веома различита начина дигиталног записа слика, позната као <strong>растерска графика</strong>, код које програм памти боју сваког појединачног пиксела слике и
+<strong>векторска графика</strong>, код које се памте геометријски облици из којих се слика састоји.</p>
+<div class="section" id="id2">
+<h2>Растерска графика<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Основни градивни елемент растерске графике је <strong>пиксел</strong>.
+Пиксел је најмањи део слике који има јединствене вредности боје и/или интензитета (нивоа) осветљености.
+Код нас се израз пиксел често преводи као тачка. Број пиксела по јединици дужине одређује квалитет дигиталне слике.
+Тако, растерска слика представља слику састављену од пиксела (тачака) различитог нивоа осветљености (монохроматске слике) или различитих боја (колор слике).</p>
+<a class="reference internal image-reference" href="../_images/p1.png"><img alt="../_images/p1.png" class="align-center" src="../_images/p1.png" style="width: 500px;" /></a>
+<p>Тачније, слика је састављена од матрице појединачних пиксела, од којих сваки има своју боју.</p>
+</div>
+<div class="section" id="id3">
+<h2>Представљање боја<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Два најзначајнија модела за представљање боја помоћу бројева су <strong>адитивни модел RGB</strong> и <strong>суптрактивни модел CМYК</strong>. У наставку су у табели приказане разлике између ова два модела.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="colwidths-auto docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>RGB</strong> или <strong>адитивни модел</strong></p></th>
+<th class="head"><p><strong>CMYK</strong> или <strong>суптрактивни модел</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Овај модел боја користи се код уређаја који приказују слику емитовањем светлости као што су монитори или пројектори.</p></td>
+<td><p>Овај модел боја користи се када направљену дигиталну слику треба одштампати на папиру или некој другој подлози.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Заснива се на особини светлости да се боја може добити комбиновањем (сабирањем) три основне боје: црвене (енгл. red), зелене (енг. green) и плаве (енг. blue).</p></td>
+<td><p>Заснива се на појави да пигмент боје премазан на папир не емитује светлост, већ супротно, упија светлост одређене боје, а око види само светлост која се одбила. Тачније, супстрактивни метод добијања спектра боја, супротан адитивном, подразумева одузимање примарних боја од беле боје. Зато се у штампи не користе црвена, зелена и плава, већ цијан, магента и жута.</p></td>
+</tr>
+<tr class="row-even"><td><p>Све боје које чине видљиви спектар могу се добити мешањем различите количине три боја, које представљају основне боје у овом моделу, а то су црвене, зелене и плаве.</p></td>
+<td><p>Oсновне боје које се користе су цијан који упија црвену светлост, магента која упија зелену светлост, жута која упија плаву светлост и црна боја.</p></td>
+</tr>
+<tr class="row-odd"><td><p>Мешањем ове три боје истог интензитета на црној подлози на месту преклапања добија се бела боја, а њиховим одсуством добија се црна боја. Уколико интензитети основних боја нису једнаки на местима где се боје преклапају могу да се добију и све остале боје из видљивог спектра боја. Одсуство све три компоненте даје црну, док максимално присуство све три компоненте даје белу боју.</p></td>
+<td><p>Цијан тачкица на папиру упија црвено светло, а одбија једнаке количине зеленог и плавог светла. Жута боја упија плаво светло, а одбија црвено и зелено док магента упија зелено светло, а одбија црвено и плаво. Због тога се овај модел назива суптрактивни, јер свака од основних боја у штампи (цијан, магента, жута) одузима једну од основних боја (црвена, зелена, плава). Када се помешају све три боје (цијан, магента, жута) у једнаким количинама требало би да се добиje црна боја. Ипак, не добија се, већ се добија црвено-смеђа боја. Због тога се у CMYK моделу уводи и четврта боја – црна боја.</p></td>
+</tr>
+<tr class="row-even"><td><img alt="../_images/L31S3.png" src="../_images/L31S3.png" />
+</td>
+<td><img alt="../_images/L31S5.png" src="../_images/L31S5.png" />
+</td>
+</tr>
+</tbody>
+</table>
+<p>Како се за приказивање боја код дигиталних уређаја користи RGB модел боја у наставку ће он бити детаљније објашњен.</p>
+<p>Ниво сваке светлосне компоненте записује се бинарно, односно бројем. Ако посматрамо RGB модел који се састоји од три компоненте,
+црвене, зелене и плаве, онда се боја пиксела може записати помоћу три броја, за сваку компоненту боје по један.
+За сваку компоненту, овај број се креће између броја који означава минималну и броја који означава максималну вредност обојености пиксела бојом те компоненте.
+Боја сваког пиксела дефинисана је бројним вредностима за сваку од три компонентне боје.</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="../_images/L31S4.png"><img alt="../_images/L31S4.png" class="align-center" src="../_images/L31S4.png" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>На пример, ако је 0 минимална а 255 максимална вредност обојености компонентним бојама, онда (255, 0, 0) представља црвену боју – концентрација црвене боје је 100%,
+док је концентрација зелене и плаве 0%. Слично томе (0, 255, 0) представља зелену боју, а (0, 0, 255) плаву боју.</p>
+<p>Разлика између минималне и максималне вредности обојености је тесно повезана са <strong>дубином боје</strong>, која одређује укупан број различитих нијанси резултујуће боје,
+које је могуће представити. Данас се најчешће користи дубина TrueColor која подразумева по 1 бајт за сваку од три RGB компоненте.
+С обзиром на то да 1 бајт садржи 8 битова, jедним бајтом могуће је представити <span class="math notranslate nohighlight">\(2^8\)</span> = 256 различитих вредности интензитета сваке компонентне (основне) боје.
+Вредност једног пиксела се представља са 3 бајта (и то по један бајт за сваку од RGB боја), тако да број боја по сваком пикселу износи 256х256х256= 16.777.216 различитих нијанси.</p>
+<p>Дубина боје је важна карактеристика сваке растерске слике и изражава се на два начина:</p>
+<ul class="simple">
+<li><p>бројем бита за опис боје</p></li>
+<li><p>бројем боја које се могу приказати.</p></li>
+</ul>
+<p>Ако је дубина боје већа, више се нијанси може приказати, што значи да тиме добијамо бољу слику као и веродостојнији приказ исте.
+Данас су у употреби следећи формати растерских слика са:</p>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<table class="colwidths-auto docutils align-center">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Број битова по пикселу за опис боје</strong></p></th>
+<th class="head"><p><strong>Број боја које се могу приказати форматом</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1 бит</p></td>
+<td><p>2 боје</p></td>
+</tr>
+<tr class="row-odd"><td><p>4 бита</p></td>
+<td><p>16 боја</p></td>
+</tr>
+<tr class="row-even"><td><p>8 бита</p></td>
+<td><p>256 боја</p></td>
+</tr>
+<tr class="row-odd"><td><p>16 бита</p></td>
+<td><p>64K боја</p></td>
+</tr>
+<tr class="row-even"><td><p>24 бита</p></td>
+<td><p>16M боја</p></td>
+</tr>
+<tr class="row-odd"><td><p>32 бита</p></td>
+<td><p>4G боја</p></td>
+</tr>
+</tbody>
+</table>
+<p>Растерске слике се према броју боја деле на четири основне категорије:</p>
+<ul class="simple">
+<li><p>Монохроматски растери (битмапе) - слике које се састоје од само две боје. Обично се користе црна и бела боја, али могућа је и комбинација било које друге две боје. Рачунар користи само један бит за сваки пиксел, па је дубина боје 1.</p></li>
+<li><p>Grayscale растери - слике у којима сваки пиксел може да прими било коју боју из скале сивих нијанси, од црне до беле боје. Овај тип слике зависи од броја сивих тонова у скали између црне и беле боје као и од њихове расподеле у тој скали. Данас се најчешће користи скала од 256 сивих тонова (рачунајући и белу и црну боју). За чување 256 нијанси сиве боје потребно је обезбедити по 8 бита (1 бајт) за сваки пиксел.</p></li>
+<li><p>Вишебојни растери – слике које садрже нијансе две или више боја.</p></li>
+<li><p>Колор растери - сваки пиксел у слици може примити било коју боју из неког дефинисаног скупа боја.</p></li>
+</ul>
+<p>Kвалитет растерске слике је одређен резолуцијом и бројем могућих нијанси боје за сваки појединачни пиксел (дубина боје).</p>
+<p><strong>Резолуција</strong> представља број пиксела слике по јединици дужине. Међутим, често се подразумева одређена величина слике у дужинским јединицама (на пример физичка величина екрана),
+па у таквој ситуацији резолуцију изражавамо само укупним бројем пиксела (што није сасвим исправно, јер то је у ствари величина растерске слике). Када кажемо да је резолуција екрана,
+или сензора камере 800x600, то значи да има укупно 480 000 пиксела који су распоређени у 800 врста и 600 колона. Још један параметар слике у вези са резолуцијом јесу њене пропорције
+(aspect ratio) које говоре о односу ширине и висине слике. Раније су резолуције LCD екрана биле углавном у пропорцији 4:3 (нпр. 1024x768 или 1280x960), док се данас користе и
+резолуције у пропорцији 16:9 (нпр. 1366x768). Телевизија високе резолуције (HDTV) има слику резолуције 1920x1080.</p>
+<div class="section" id="id4">
+<h3>Питање:<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="L31P111">
+            <p>На дигиталном уређају сачувана је слика која има следеће димензије 2048x1152. Колико пиксела има по висини слике?</p>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^1152$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="L31P211">
+            <p>Колико пиксела има по ширини слике?</p>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^2048$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="L31P311">
+            <p>Колика је укупна резолуција у мегапикселима (један мегапиксел је милион пиксела)? Унеси вредност користећи за запис са две децимале иза децималне тачке.</p>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^2.36$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>Резолуција данашњих дигиталних фотоапарата обично се изражава у мегапикселима (милионима пиксела). Тако, резолуција од 10,1 мегапиксела подразумева да слика има око 10,1 милиона пиксела, тј. резолуцију од 3888x2592 пиксела (слика је обично у пропорцији 3:2).</p>
+<p>Резолуција се изражава у броју пиксела по јединици дужине – обично у <strong>броју пиксела по инчу (ppi)</strong>. Тако да стандардни LCD екрани обично имају резолуцију око 100 ppi. На пример, монитор дијагонале 15,4 инча који приказује слику резолуције 1280x960 пиксела има резолуцију 104 ppi.
+Као што је већ речено, резолуција је број пиксела по мерној јединици, обично  инчу (2.54 cm). Резолуцијa слике добија се када се подели њена физичка димензија (ширина или висина) са бројем пиксела поређаних дуж те физичке димензије.</p>
+</div>
+<div class="section" id="id5">
+<h3>Питање:<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+
+        <div class="course-box course-box-question course-content">
+        <div data-component="fillintheblank" id="L31P411">
+            <p>На пример, ако је слика ширине 16 cm, а висине 7.51 cm и има 454 пиксела по ширини и 201 по висини слике, онда је резолуција 454/16 или 201/7.51 = 26.764 пиксела по центиметру. Колика је резолуција ове слике изражена у пикселима по инчу? Унеси вредност користећи запис са две децимале иза децималне тачке.</p>
+<p>Одговор: <input type="text"></p>
+
+        <script type="application/json">
+            [[{"regex": "^ *^67.98$ *$", "regexFlags": "", "feedback": "<p>\u0422\u0430\u0447\u043d\u043e</p>\n"}, {"regex": "^ *x *$", "regexFlags": "", "feedback": "<p>\u041e\u0434\u0433\u043e\u0432\u043e\u0440 \u043d\u0438\u0458\u0435 \u0442\u0430\u0447\u0430\u043d.</p>\n"}]]
+        </script>
+
+        </div>
+        </div>
+            <p>Квалитет штампе обично се изражава у броју тачака по инчу (dots per inch, dpi). То је заправо густина тачака на основу којих штампач креира слику. Инкџет штампачи имају квалитет 300 до 600 dpi, док ласерски обично имају од 600 до 1800 dpi. Билборди се штампају и са 45 dpi, новине са 85 dpi, а квалитетне књиге и новине са 150 dpi.</p>
+<p>Што је већа резолуција, тачније што је већи број пиксела, то је квалитет слике бољи. Већа дубина боје подразумева вернији приказ слике, али захтева и више меморије. Када се растерска слика увећа, број пиксела се не мења, број остаје исти, а слика постаје мутна, јер долази до увећавања пиксела. Такође, велико смањивање слике доводи до губитка квалитета.</p>
+<p>Постоји велики број програма за прављење или обраду растерских слика. Од најпознатијих ту су Adobe Photoshop и Corel Photo-Paint, а од бесплатних ту је MS Paint, GIMP итд.</p>
+<p>Већина ових програма користи RGB модел боја док неки дозвољавају употребу и других модела боја попут CMYK.</p>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>Векторска графика<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Код векторске графике слика се састоји од комбинације елементарних објеката, правих и кривих линија, отворених и затворених, испуњених и неиспуњених геометријских објеката
+који могу да се преклапају, прекривају или уклапају креирајући на тај начин слику.</p>
+<a class="reference internal image-reference" href="../_images/p2.png"><img alt="../_images/p2.png" class="align-center" src="../_images/p2.png" style="width: 500px;" /></a>
+<p>Распоред објеката се може мењати исто као и њихов облик и величина, а да се при томе положај и карактеристике осталих делова слике не мењају.
+Овакве слике је лакше креирати, мењати и комбиновати са другим сликама. Векторска графика своју примену налази у програмима намењеним дизајнерима и
+свуда где је састављање слике од објеката природан начин визуализације стварног или измишљеног света.</p>
+<p>Као што знаш, сваки вектор има своју почетну тачку, смер и завршну тачку, дужину, ако је закривљен онда садржи и тачке које дефинишу кривуље или углове.</p>
+<p>Векторском графиком креирамо геометријске облике круг, квадрат, троугао или друге облике… Када дигиталну слику увећамо она остаје оштра,
+тачније увећањем на било коју величину не губи се квалитет слике. Разлог томе је што се у процесу увећања геометријски облици поново исцртавају.
+Због тога је она идеална за израду логоа предузећа, географских карата, билборда, којима је често потребно мењати величину.</p>
+<p>Међутим, постоје извесна ограничења:</p>
+<ul class="simple">
+<li><p>код превеликог смањивања могу нестати танке линије. Тачније, оне ће и даље постојати али се не могу одштампати или приказати на екрану.</p></li>
+<li><p>мале грешке могу постати приметне кад се слика пуно увелича.</p></li>
+<li><p>многи програми омогућавају да се у векторској графици користе и растерска графика.</p></li>
+</ul>
+<p>Због свега горе наведеног, пре или касније, сва векторска графика мора бити пребачена у растерску како би била приказана на дигиталном монитору.</p>
+<p>Постоји велики број програма за прављење или обраду векторских слика. Најпознатији комерцијални програми су Corel Draw и Adobe Illustrator, а бесплатни Inkscape.</p>
+</div>
+<div class="section" id="id7">
+<h2>Типови графичких датотека<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Снимљене слике коришћењем савремених дигиталних уређаја, који имају камере високе резолуције заузимају велику количину меморије. Тако на пример, дигитални фотоапарати резолуције 12 мегапиксела (12.000.000 пиксела) код којих се користи 24-битна дубина боје формирају слике чије датотеке (без компресије) заузимају 36 MB меморије.</p>
+<p>Да би се смањила количина меморије коју сачувана слика заузима на дигиталном уређају развијене су различите технике компресије дигиталне слике. Приликом компресије се не мења број пиксела који чини слику, већ се мења начин записивања слике, при чему квалитет слике може да зависи од степена и начина компресије.</p>
+<p>Најчешће коришћене компресије дигиталне слике су:</p>
+<ul class="simple">
+<li><p>компресија без губитака (lossless) – врши се смањење величине датотеке без смањења квалитета слике, а то значи да се компримована слика може декопмримовати тако да буде идентична оригиналу. Ова врста компресије се користи се кад је квалитет слике важнији од величине датотеке.</p></li>
+<li><p>компресија са губитком података (lossy) - врши се смањење величине датотеке тако што се неки подаци губе приликом компресије и декомпресије, зато што се сматрају визулено небитним. Ово је тип компресије који полазну слику замењује врло сличном, ослањајући се на то да људско око најчешће није у стању да примети разлику. При томе, у специфичном начину записивања слике који се користи, за ту сличну слику је потребно много мање меморије.</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h2>Формати растерских датотека<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>У наставку је дат табеларни приказ најчешће коришћених типова (формата) растерских датотека:</p>
+<p>(НК -некомпримовани, НК - компримовани, КСГ - компримовани са губицима, КБГ - компримовани без губитака)</p>
+<table class="colwidths-auto docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Назив</strong></p></th>
+<th class="head"><p><strong>Опис</strong></p></th>
+<th class="head"><p><strong>НК</strong></p></th>
+<th class="head"><p><strong>КСГ</strong></p></th>
+<th class="head"><p><strong>КБГ</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>RAW</p></td>
+<td><p>формат записа фотографије у којем фотоапарат бележи све податке које је забележио и сам дигитални сензор фотоапарата (RAW значи сиров, необрађен).
+У овом формату нема компресије па ни редукције квалитета слике;</p></td>
+<td><p>X</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>BMP (bitmap)</p></td>
+<td><p>један од првих формата па се растерске слике често називају битмапиране слике. У датотеку се складишти сваки пиксел слике, са одговарајућим бројем бајтова
+који одређују боју. Нема компресије па ни редукције квалитета слике;</p></td>
+<td><p>X</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>GIF</p></td>
+<td><p>(Graphics Interchange Format) формат је ограничен на 8-битну палету, односно 256 боја чиме се смањује количина података. Погодан је за чување графике са релативно мало боја као што су дијаграми, геометријски облици, и логотипи.
+Подржава анимације и често се користи за приказ анимација на веб страници;</p></td>
+<td><p>X</p></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>JPEG</p></td>
+<td><p>(Joint Photographic Experts Group) је компресовани формат слика са губицима. Заснива се на особини људског ока да боље уочава површине и облике
+него варијације у боји и осветљењу. Ово је најчешће коришћен формат у раду са сликама. Због мале количине меморије коју заузима налази примену у складиштењу слика,
+приказу слика путем интернета или размени путем електронске поште;</p></td>
+<td></td>
+<td></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p>PNG</p></td>
+<td><p>(Portable Network Graphics) је формат за растерске слике који користи компресију без губитка. Подржава 24-битну дубину боја;</p></td>
+<td></td>
+<td><p>X</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>TIFF или TIF</p></td>
+<td><p>(Tagged Image File Format) формат користи 24-битну или 48-битну дубину боје. Користи се компресија без губитка, и зато је преовлађујући формат за велике слике које се користе за штампу великих плаката,
+високо квалитетних каталога и сл.</p></td>
+<td></td>
+<td><p>X</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id9">
+<h2>Формати векторских датотека<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>Формати за чување векторских датотека углавном зависе од програма у којем је садржај датотеке направљен.
+Преглед најчешће коришћених типови (формата) векторских датотека дат је табеларно у наставку.</p>
+<table class="colwidths-auto docutils align-left">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Назив</strong></p></th>
+<th class="head"><p><strong>Опис</strong></p></th>
+<th class="head"><p><strong>Програм</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>SVG</p></td>
+<td><p>(Scalable Vector Graphics) – формат намењени веб страницама;</p></td>
+<td><p>Inkscape, web странице</p></td>
+</tr>
+<tr class="row-odd"><td><p>PS</p></td>
+<td><p>(PostScript) формат који се користи за запис докумената намењених за читање на екрану и штампање. Подржава чување и растерских слика;</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>PDF</p></td>
+<td><p>(Portable Document Format) - формат који се користи за запис докумената намењених за читање на екрану и штампање. Подржава чување и растерских слика;</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>AI</p></td>
+<td><p>формат који користи програм Adobe Illustrator</p></td>
+<td><p>Adobe Illustrator</p></td>
+</tr>
+<tr class="row-even"><td><p>CDR</p></td>
+<td><p>(CorelDraw) - формат који користи програм CorelDraw</p></td>
+<td><p>CorelDraw</p></td>
+</tr>
+<tr class="row-odd"><td><p>DWG</p></td>
+<td><p>(AutoCAD) - формат који користи програм AutoCAD</p></td>
+<td><p>AutoCAD</p></td>
+</tr>
+<tr class="row-even"><td><p>DHF</p></td>
+<td><p>AutoCAD) - формат који користи програм AutoCAD</p></td>
+<td><p>AutoCAD</p></td>
+</tr>
+</tbody>
+</table>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            <p>
+<dl class="simple">
+<dt><strong>Укратко</strong></dt><dd><ul class="simple">
+<li><p>Рачунарска графика је област рачунарства која се бави креирањем, обрадом, прилагођавањем слика и анимација помоћу рачунара.</p></li>
+<li><p>Растерска слика не може се увећати без губитка квалитета.</p></li>
+<li><p>Пиксел (енгл. pixel, скраћено од picture element, део слике) је најмањи елемент дигиталне слике који се може обрађивати.</p></li>
+<li><p>Резолуција је основна мера за оштрину неке слике и дефинише се као број пиксела на екрану.</p></li>
+<li><p>Дубина боје одређује укупан број различитих нијанси боје које се могу представити.</p></li>
+<li><p>RGB (Red, Green, Blue) модел приказа боја је адитивни метод стварања слике који се заснива на комбиновању (сабирању) светлости три основне боје.</p></li>
+<li><p>CMYK (енгл. Cyan, Magenta, Yellow, Key (Black)) модел  приказа боја назива се и суптрактивни, јер свака од основних боја у штампи (цијан, магента, жута) одузима једну од основних боја (црвена, зелена, плава).</p></li>
+<li><p>Векторска графика представља начин приказивања слике помоћу објеката (геометријских облика).</p></li>
+<li><p>Да би се смањила количина меморије потребна за чување слика развијене су различите технике компресије дигиталне слике.</p></li>
+<li><p>Векторска графика може се неограничено увећавати без губитка квалитета.</p></li>
+<li><p>Најчешће коришћени типови (формати) растерских датотека су: RAW, BMP, GIF, JPEG, PNG, TIFF.</p></li>
+<li><p>Најчешће коришћени типови (формати) векторских датотека су: SVG, PDF, CDR, DWG.</p></li>
+</ul>
+</dd>
+</dl>
+
+    </p></div></div>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

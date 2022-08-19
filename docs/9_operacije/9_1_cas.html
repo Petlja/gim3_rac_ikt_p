@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="sr-Cyrl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Час. Операције над објектима</title>
+    <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/datafile.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/dragndrop.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/fitb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/matrixeq.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/parsons.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/lib/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/poll.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/showEval.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabbedstuff.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/video.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webgldemo.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/webglinteractive.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/karel.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/notes.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/associations.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/editor.css" />
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/user-highlights.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-4.0.0-dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/flatly.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/petlja-course.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/nbstyle.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/runestonebase.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/jquery.highlight.js"></script>
+    <script type="text/javascript" src="../_static/bookfuncs.js"></script>
+    <script type="text/javascript" src="../_static/codemirror.js"></script>
+    <script type="text/javascript" src="../_static/xml.js"></script>
+    <script type="text/javascript" src="../_static/css.js"></script>
+    <script type="text/javascript" src="../_static/python.js"></script>
+    <script type="text/javascript" src="../_static/htmlmixed.js"></script>
+    <script type="text/javascript" src="../_static/javascript.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.language.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script type="text/javascript" src="../_static/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/activecode-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/activecode.js"></script>
+    <script type="text/javascript" src="../_static/clike.js"></script>
+    <script type="text/javascript" src="../_static/timed_activecode.js"></script>
+    <script type="text/javascript" src="../_static/animationbase.js"></script>
+    <script type="text/javascript" src="../_static/mchoice.js"></script>
+    <script type="text/javascript" src="../_static/timedmc.js"></script>
+    <script type="text/javascript" src="../_static/timed.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/mchoice-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/clickable.js"></script>
+    <script type="text/javascript" src="../_static/timedclickable.js"></script>
+    <script type="text/javascript" src="../_static/d3.v2.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.ba-bbq.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.jsPlumb-1.3.10-all-min.js"></script>
+    <script type="text/javascript" src="../_static/pytutor.js"></script>
+    <script type="text/javascript" src="../_static/codelens.js"></script>
+    <script type="text/javascript" src="../_static/skulpt.min.js"></script>
+    <script type="text/javascript" src="../_static/skulpt-stdlib.js"></script>
+    <script type="text/javascript" src="../_static/datafile.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop.js"></script>
+    <script type="text/javascript" src="../_static/timeddnd.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/dragndrop-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/fitb.js"></script>
+    <script type="text/javascript" src="../_static/timedfitb.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/fitb-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/matrixeq.js"></script>
+    <script type="text/javascript" src="../_static/lib/prettify.js"></script>
+    <script type="text/javascript" src="../_static/lib/hammer.min.js"></script>
+    <script type="text/javascript" src="../_static/parsons.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/parsons-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/timedparsons.js"></script>
+    <script type="text/javascript" src="../_static/poll.js"></script>
+    <script type="text/javascript" src="../_static/reveal.js"></script>
+    <script type="text/javascript" src="../_static/shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/timed_shortanswer.js"></script>
+    <script type="text/javascript" src="../_static/showEval.js"></script>
+    <script type="text/javascript" src="../_static/tabbedstuff.js"></script>
+    <script type="text/javascript" src="../_static/runestonevideo.js"></script>
+    <script type="text/javascript" src="../_static/webglinteractive.js"></script>
+    <script type="text/javascript" src="../_static/FileSaver.min.js"></script>
+    <script type="text/javascript" src="../_static/Blob.js"></script>
+    <script type="text/javascript" src="../_static/karelCorner.js"></script>
+    <script type="text/javascript" src="../_static/karelRobot.js"></script>
+    <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
+    <script type="text/javascript" src="../_static/karelUI.js"></script>
+    <script type="text/javascript" src="../_static/karel.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/karel-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/notes.js"></script>
+    <script type="text/javascript" src="../_static/pygamelib-init.js"></script>
+    <script type="text/javascript" src="../_static/gallery.js"></script>
+    <script type="text/javascript" src="../_static/associations.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/associations-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/editor.js"></script>
+    <script type="text/javascript" src="../_static/jszip.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.en.js"></script>
+    <script type="text/javascript" src="../_static/editor-i18n.sr-Cyrl.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-4.0.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <script type="text/javascript" src="../_static/waypoints.min.js"></script>
+    <script type="text/javascript" src="../_static/rangy-core.js"></script>
+    <script type="text/javascript" src="../_static/rangy-textrange.js"></script>
+    <script type="text/javascript" src="../_static/rangy-cssclassapplier.js"></script>
+    <script type="text/javascript" src="../_static/user-highlights.js"></script>
+    <script type="text/javascript" src="../_static/jquery.idle-timer.js"></script>
+    <script type="text/javascript" src="../_static/processing-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../_static/jquery.hotkey.js"></script>
+    <script type="text/javascript" src="../_static/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../_static/course-errors.js"></script>
+    <script type="text/javascript" src="../_static/petlja.js"></script>
+    <script type="text/javascript" src="../_static/require.js"></script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <link rel="shortcut icon" href="../_static/favicon.ico" type="image/ico" />
+    <script type="text/javascript">
+      eBookConfig = {};
+      eBookConfig.host = 'http://127.0.0.1:8000' ? 'http://127.0.0.1:8000' : 'http://127.0.0.1:8000';
+      eBookConfig.app = eBookConfig.host + '/runestone';
+      eBookConfig.ajaxURL = eBookConfig.app + '/ajax/';
+      eBookConfig.course = '3_razred_IKT_DigitalnaPismenost';
+      eBookConfig.logLevel = '0';
+      eBookConfig.loginRequired = 'false';
+      eBookConfig.build_info = "";
+      eBookConfig.isLoggedIn = false;
+      eBookConfig.useRunestoneServices = false;
+      eBookConfig.python3 = true;
+      eBookConfig.basecourse = 'Primer_kurs';
+      eBookConfig.runestone_version = '';
+      eBookConfig.imagesDir = '../_images/';
+      eBookConfig.staticDir = '../_static/';
+      if (typeof (Sk) != "undefined")
+        Sk.imgPath = eBookConfig.imagesDir;
+    </script>
+
+  </head>
+
+  <body>
+
+
+
+<div id="navbar" class="content-header">
+  <div class="right-side-nav">
+    
+</div>
+
+<div class="left-side-nav">
+  <div class="course-logo-nav">
+      <a target="_blank" href="https://petlja.org">
+          <img src="../_static/img/petlja-logo-wt.svg" alt="petlja.org" id="lightPetljaLogo">
+      </a>
+  </div>
+  <div class="course-logo-nav-kabinet">
+      <a target="_blank" href="https://petlja.org/net.kabinet">
+          <img src="../_static/img/netkabinet-logo-strelica-wt.svg" alt="petlja.org" id="lightNetKabinetLogo">
+      </a>
+  </div>
+</div>
+
+
+<div class="content-header-label" id = "content-header-label" href="../">Рачунарска графика</div>
+
+</div>
+
+
+
+
+<div class="petljaCourseContainer">
+
+<div class="petljaCourseContent">
+  
+           <div class="tableOfContent">
+            <h5> Садржај </h5>
+            </div>
+           <div>
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_rg>
+                    <h5>Рачунарска графика</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_rg/rac_graf.html><div class="studioLecture" id=activity-rac_graf><i class="fas fa-file-alt activity-icon"></i>Рачунарска графика</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-1_uvod>
+                    <h5>1. Увод у рачунарску графику</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../1_uvod/1_1_cas.html><div class="studioLecture" id=activity-1_1_cas><i class="fas fa-file-alt activity-icon"></i>Увод у рачунарску графику</div></a>
+                <a href=../1_uvod/1_2_kviz.html><div class="studioLecture" id=activity-1_2_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Увод у рачунарску графику</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-2_program>
+                    <h5>2. Радно окружење програма за обраду растерске графике</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../2_program/2_1_uvod.html><div class="studioLecture" id=activity-2_1_uvod><i class="fas fa-file-alt activity-icon"></i>Радно окружење програма за обраду растерске графике</div></a>
+                <a href=../2_program/2_2_vez.html><div class="studioLecture" id=activity-2_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Радно окружење програма за обраду растерске графике</div></a>
+                <a href=../2_program/2_3_kviz.html><div class="studioLecture" id=activity-2_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Радно окружење програма за обраду растерске графике</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-3_optimizacija>
+                    <h5>3. Оптимизација слике за штампање и ради објављивања на интернету</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../3_optimizacija/3_1_cas.html><div class="studioLecture" id=activity-3_1_cas><i class="fas fa-file-alt activity-icon"></i>Оптимизација слике за штампање и ради објављивања на интернету</div></a>
+                <a href=../3_optimizacija/3_2_vez.html><div class="studioLecture" id=activity-3_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Оптимизација слике за штампање и ради објављивања на интернету</div></a>
+                <a href=../3_optimizacija/3_3_kviz.html><div class="studioLecture" id=activity-3_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Оптимизација слике за штампање и ради објављивања на интернету</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-4_vezba>
+                    <h5>4. Практична вежба</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../4_vezba/4_vezba.html><div class="studioLecture" id=activity-4_vezba><i class="fas fa-file-alt activity-icon"></i>Практична вежба</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-5_obrada_raster>
+                    <h5>5. Обрада растерске слике</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../5_obrada_raster/5_1_cas.html><div class="studioLecture" id=activity-5_1_cas><i class="fas fa-file-alt activity-icon"></i>Обрада растерске слике</div></a>
+                <a href=../5_obrada_raster/5_2_kviz.html><div class="studioLecture" id=activity-5_2_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Обрада растерске слике</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-6_vezba>
+                    <h5>6. Практична вежба</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../6_vezba/6_vezba.html><div class="studioLecture" id=activity-6_vezba><i class="fas fa-file-alt activity-icon"></i>Практична вежба</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-7_inkscape>
+                    <h5>7. Радно окружење програма за креирање векторске графике</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../7_inkscape/7_1_cas.html><div class="studioLecture" id=activity-7_1_cas><i class="fas fa-file-alt activity-icon"></i>Радно окружење програма за креирање векторске графике</div></a>
+                <a href=../7_inkscape/7_2_vez.html><div class="studioLecture" id=activity-7_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Радно окружење програма за креирање векторске графике</div></a>
+                <a href=../7_inkscape/7_3_kviz.html><div class="studioLecture" id=activity-7_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Радно окружење програма за креирање векторске графике</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-8_crtanje>
+                    <h5>8. Цртање основних графичких елемената</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../8_crtanje/8_1_cas.html><div class="studioLecture" id=activity-8_1_cas><i class="fas fa-file-alt activity-icon"></i>Цртање основних графичких елемената</div></a>
+                <a href=../8_crtanje/8_2_vez.html><div class="studioLecture" id=activity-8_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Цртање основних графичких елемената</div></a>
+                <a href=../8_crtanje/8_3_kviz.html><div class="studioLecture" id=activity-8_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Цртање основних графичких елемената</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-9_operacije>
+                    <h5>9. Операције над објектима</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../9_operacije/9_1_cas.html><div class="studioLecture" id=activity-9_1_cas><i class="fas fa-file-alt activity-icon"></i>Операције над објектима</div></a>
+                <a href=../9_operacije/9_2_vez.html><div class="studioLecture" id=activity-9_2_vez><i class="fas fa-file-alt activity-icon"></i>Вежбаоница. Операције над објектима</div></a>
+                <a href=../9_operacije/9_3_kviz.html><div class="studioLecture" id=activity-9_3_kviz><i class="far fa-question-circle activity-icon"></i>Квиз. Операције над објектима</div></a>
+                </div>
+            </div>
+                
+                <div class="courseContentsSection">
+                <div class="lecture-div courseContentsSectionHeadline" id=lecture-10_vezba>
+                    <h5>10. Практична вежба</h5>
+                    <i class="fas fa-angle-down caret-position "> </i>
+                    <i class="fas fa-angle-up caret-position d-none"></i>
+                </div>
+                <div class="courseContentsSubSection d-none"><a href=../10_vezba/10_vez.html><div class="studioLecture" id=activity-10_vez><i class="fas fa-file-alt activity-icon"></i>Практична вежба</div></a>
+                </div>
+            </div>
+                </div>
+</div>
+
+
+
+<div class="lectureContent">
+
+  <div id="errors">
+  </div>
+  
+  <div class="lectureContentMaterial">
+  
+    <div id="main-content">
+    
+  <div class="section" id="id1">
+<h1>Час. Операције над објектима<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            <p>
+<p>На овом часу научићеш о:</p>
+<ul class="simple">
+<li><p>oперацијама над објектима;</p></li>
+<li><p>векторизацији растерске слике.</p></li>
+</ul>
+
+    </p></div></div>
+<p>Основна алатка у програму Inkscape jе алатка за селекцију <a class="reference internal" href="../_images/L39S1.png"><img alt="d1" src="../_images/L39S1.png" style="width: 30px;" /></a>. Користи се за манипулацију објектима (померање, промена величине, ротација…). Ако желиш да вршиш неке измене на објекту, мораш да га најпре селектујеш.</p>
+<div class="section" id="id2">
+<h2>Померање објеката<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Када означиш објекат коришћењем алатке за селекцију <a class="reference internal" href="../_images/L39S1.png"><img alt="d1" src="../_images/L39S1.png" style="width: 30px;" /></a>, око објекта се формира оквир са 8 двостраних стрелица.</p>
+<a class="reference internal image-reference" href="../_images/L39S2.png"><img alt="../_images/L39S2.png" class="align-center" src="../_images/L39S2.png" style="width: 400px;" /></a>
+<p>Као што смо већ више пута поновили, објекат можеш да помераш само када је селектован (уоквирен) и то превлачењем мишем или употребом стрелица на тастатури. Притиском на стрелице са тастатуре објекат се помера у жељеном смеру за 2 пиксела. Када су у исто време притисни тастер Shift и стрелице са тастатуре, померање је 10 пута веће (20 пиксела).Напомена, ово померање можеш да подесиш у опцији Preferences из менија Edit. У том прозору у одељку Behavior, одабереш опцију Steps, у којој подешаваш број пиксела за које се врши померање објеката.</p>
+</div>
+<div class="section" id="id3">
+<h2>Редослед објеката<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Објекти које постављамо на страницу нису у истој равни, већ су поређани по нивоима. Сваки нови објекат налази се на нивоу изнад претходног.</p>
+<a class="reference internal image-reference" href="../_images/L39S3.png"><img alt="../_images/L39S3.png" class="align-center" src="../_images/L39S3.png" style="width: 400px;" /></a>
+<p>Редослед означеног објекта можеш да промениш применом алатки:</p>
+<a class="reference internal image-reference" href="../_images/L39S4.png"><img alt="../_images/L39S4.png" class="align-center" src="../_images/L39S4.png" style="width: 300px;" /></a>
+<p>Raise помера означени објекат на горе за један ниво;
+Lower помера означени објекат на доле за један ниво;
+Raise to Top помера означени објекат на врх, на први ниво;
+Lower to Bottom помера означени објекат на дну, на последњи ниво;</p>
+<p>или одабиром истих опција из менија Object.</p>
+</div>
+<div class="section" id="id4">
+<h2>Промена величине објеката<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>Величину објекта мењаш тако што кликнеш на одговарајуће двостране стрелице и повлачиш их до жељене величине. Кликом на двостране стрелице које су на средини страница оквира селектованог објекта и њиховим повлачењем мењаш ширину или висину објекта. Кликом на двостране стрелице у угловима селектованог објекта истовремено мењаш и ширину и висину објекта. Ако желиш да задржиш пропорције објекта (исти однос ширине и висине) неопходно је да, током промене величине објекта држиш притиснут тастер Ctrl.</p>
+</div>
+<div class="section" id="id5">
+<h2>Ротирање и нагињање објеката<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Ако желиш да ротираш или нагињеш објекат потребно је да га прво селектујеш, а затим на тако селектовани објекат још једном кликнеш примарним тастером миша. Око селектованог објекта двостране стрелице мењају облик.</p>
+<a class="reference internal image-reference" href="../_images/L39S5.png"><img alt="../_images/L39S5.png" class="align-center" src="../_images/L39S5.png" style="width: 200px;" /></a>
+<p>Објекат ротираш тако што повлачиш одговарајуће двостране стрелице, које се налази на углу селектованог објекта.</p>
+<p>Објекат вертикално нагињеш тако што повлачиш двостране стрелице која се налази на средини странице оквира селектованог објекта (са леве и десне стране).</p>
+<p>Објекат хоризонтално нагињеш тако што повлачиш двостране стрелице која се налази на средини странице оквира селектованог објекта (горе и доле).</p>
+<a class="reference internal image-reference" href="../_images/L39S6.png"><img alt="../_images/L39S6.png" class="align-center" src="../_images/L39S6.png" style="width: 400px;" /></a>
+<p>За прецизнију манипулацију над селектованим објектима можеш да користиш и опције из менија Object →  Transform. Отвара се прозор у коме можеш да изабереш једну од четири картице Move, Scale, Rotate и Skew, у којима подешаваш померања објекта (по хоризонтали и вертикали), промену величине објекта (ширина и висина, одабиром опције могуће је и пропорцијална промена величине), ротирање (одабир вредости угла одабиром жељене мерне јединице и смера ротације, у смеру казаљке на сату или у смеру супротном од смера казаљке на сату) и нагињање објекта (угао по вертикали и хоризонтали).</p>
+<a class="reference internal image-reference" href="../_images/L39S7.png"><img alt="../_images/L39S7.png" class="align-center" src="../_images/L39S7.png" style="width: 700px;" /></a>
+<p>У свим овим картицама могуће је одабрати и да се трансформације примењују на појединачне објекте селектоване групе објеката. Кликом на дугме Apply све промене ће бити примењене.</p>
+</div>
+<div class="section" id="id6">
+<h2>Вишеструка селекција<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>Ако на радној површини, имаш више објеката, а желиш да на њима извршиш одређену операцију то можеш да урадиш тако што држиш притиснут тастер Shift и кликнеш на сваки од објеката који желиш да означиш. Број објеката које можеш да селектујеш на овај начин није ограничен. Све објекте на страници слектујемо комбинацијом тастера Ctrl+A.</p>
+</div>
+<div class="section" id="id7">
+<h2>Уређивање објеката<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>Објекте можеш да уређујеш тако што од постојећих правиш нове. Ако користиш алатку <a class="reference internal" href="../_images/L39S8.png"><img alt="d2" src="../_images/L39S8.png" style="width: 30px;" /></a> довољно је да кликнеш на објекат и он је спреман за модификовање. Приказаће се чворови беле боје. Њиховим повлачењем мењаш изглед делова објекта.</p>
+<p>За детаљније уређивање објеката, попут измене углова правоугаоника и додавања нових чворова неопходно је да објекте претворимо у путање (Path). То чиниш тако што селектујеш објекат и из менија Path одабереш опцију Object to Path. Када је објекат претворен у путању на располагању су нам 4 различите врсте чворова  cusp, smooth, symmetric, auto-smooth.</p>
+<a class="reference internal image-reference" href="../_images/L39S9.png"><img alt="../_images/L39S9.png" class="align-center" src="../_images/L39S9.png" style="width: 800px;" /></a>
+<p>Угаони чворови (cusp) намењени су за креирање оштрих углова, smooth и symmetric за креирање кривих, а auto-smooth за креирање идеално глатких кривих. За подешавање одговарајуће врсте чвора потребно је да кликнеш на постојећи чвор, а затим да одабереш једну од опција <a class="reference internal" href="../_images/L39S10.png"><img alt="d3" src="../_images/L39S10.png" style="width: 30px;" /></a>.</p>
+<p>Објекат мењамо тако што повлачимо бели круг одговарајућег чвора.</p>
+<p>За додавање новог чвора довољно је да два пута кликнеш (двоклик) на жељено место на објекту. Да би чвор био обрисан, потребно је да га означиш, а затим притиснеш тастер Delete.
+Додавање и брисање чворова можемо да обавимо опцијама <a class="reference internal" href="../_images/L39S11.png"><img alt="d4" src="../_images/L39S11.png" style="width: 130px;" /></a>.</p>
+<p>Осим стандардних опција за обликовање текста, могуће је да текст поставиш на неки елемент, било да је он правилан или не. Да би то било могуће, потребно је да креираш неку путању,
+објекат и унесеш жељени текст. Следећи корак је да означиш текст и објекат, а затим, одабереш опцију  Put on Path из менија Text.
+Текст уклањаш са путање или објекта тако што одабереш опцију Remove from Path из менија Text.
+Текст можеш да ротираш и додатно обликујеш коришћењем стандардних опција које користиш за обликовање текста. Објекте можеш да сакријеш тако да се не види на каквом објекту је текст написан. То радиш тако што означиш објекат и уклониш ивице објекта. Објекат није више видљив.</p>
+</div>
+<div class="section" id="id8">
+<h2>Комбиновање објеката<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Интересантна опција у програму Inkscape је комбиновање објеката, односно креирање новог објекта уклапањем једног или више постојећих.
+Објекте комбинујеш тако што превучеш један објекат преко другог, селектујеш оба и одабереш начин комбиновања (Union, Difference, Intersection, Exclusion, Divison, Cut Path) из менија Path.</p>
+<a class="reference internal image-reference" href="../_images/L39S12.png"><img alt="../_images/L39S12.png" class="align-center" src="../_images/L39S12.png" style="width: 300px;" /></a>
+<p>Имамо почетни облик као на доњој слици:</p>
+<a class="reference internal image-reference" href="../_images/L39S13.png"><img alt="../_images/L39S13.png" class="align-center" src="../_images/L39S13.png" style="width: 200px;" /></a>
+<p>Операције комбиновања објеката:</p>
+<p>Унија (Union): Нови објекат садржи сва подручја изворних објеката, осим спојева између елемената, који су избрисани и претворени у један објекат.</p>
+<a class="reference internal image-reference" href="../_images/L39S14.png"><img alt="../_images/L39S14.png" class="align-center" src="../_images/L39S14.png" style="width: 200px;" /></a>
+<p>Разлика (Difference): Ако је потребно да обришеш доњи објекат помоћу горњег, али само разликом, тј. оним подручјем где се два објекта преклапају.</p>
+<a class="reference internal image-reference" href="../_images/L39S15.png"><img alt="../_images/L39S15.png" class="align-center" src="../_images/L39S15.png" style="width: 170px;" /></a>
+<p>Пресек (Intersection): Нови објекат настаје од преклапајућег тј. заједничког подручја изворних објеката.</p>
+<a class="reference internal image-reference" href="../_images/L39S16.png"><img alt="../_images/L39S16.png" class="align-center" src="../_images/L39S16.png" style="width: 170px;" /></a>
+<p>Искључење (Exclusion): Користи се ако желиш да искључиш два или више објеката у њиховим преклапањима.</p>
+<a class="reference internal image-reference" href="../_images/L39S17.png"><img alt="../_images/L39S17.png" class="align-center" src="../_images/L39S17.png" style="width: 200px;" /></a>
+<p>Подела (Divison): Ако желиш да извршиш дељење објеката који се преклапају.</p>
+<a class="reference internal image-reference" href="../_images/L39S18.png"><img alt="../_images/L39S18.png" class="align-center" src="../_images/L39S18.png" style="width: 200px;" /></a>
+<p>Одрезивање (Cut Path): За одрезивање елемената по ивица објекта, где је објекат нижег нивоа одрезан елементом вишег нивоа. Новоформирани објекат нема никакву боју унутрашње области.</p>
+<a class="reference internal image-reference" href="../_images/L39S19.png"><img alt="../_images/L39S19.png" class="align-center" src="../_images/L39S19.png" style="width: 200px;" /></a>
+<p>Поступак комбиновања објеката можеш погледати на доњем видеу:</p>
+
+    <div  id="4BalqI0w_so" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
+        <div style="background-image: url('https://img.youtube.com/vi/4BalqI0w_so/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
+            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+        </div>
+      
+
+        </div>
+    <div id="modal-4BalqI0w_so" class="ytvideoclose" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(128, 182, 128, 0.3); z-index: 10000;">
+        <div style="background-color: white; position: fixed; top: 4vh; left: 5vw; width:  90vw; height:  90vh; z-index: 100;" id="YTmodal-4BalqI0w_so">
+        </div>
+    </div>
+    
+    
+    </div>
+<div class="section" id="id9">
+<h2>Копирање и брисање објекта<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>На страницу можеш да копираш селектовани објекат на више начина:</p>
+<ul class="simple">
+<li><p>коришћењем стандардних пречица са тастатуре (Ctrl+C, Ctrl+V),</p></li>
+<li><p>десним кликом миша на објекат на страници и одабиром из падајућег менија наредбе Copy и Paste,</p></li>
+<li><p>избором пречица (Copy <a class="reference internal" href="../_images/L39S20.png"><img alt="d5" src="../_images/L39S20.png" style="width: 30px;" /></a>, Paste <a class="reference internal" href="../_images/L39S21.png"><img alt="d6" src="../_images/L39S21.png" style="width: 30px;" /></a>) из Командне линије.</p></li>
+</ul>
+<p>Копирање објекта је могуће извршити и помоћу наредби Duplicate <a class="reference internal" href="../_images/L39S22.png"><img alt="d7" src="../_images/L39S22.png" style="width: 30px;" /></a> и Clone <a class="reference internal" href="../_images/L39S23.png"><img alt="d8" src="../_images/L39S23.png" style="width: 30px;" /></a> из Командне линије. Коришћењем ових наредби копирани објекти се појављују преко постојећих објеката па их је потребно померити на жељену позицију.</p>
+<p>Дa бисмо обрисали објекат потребно је да га селектујемо и притиснемо тастер Delete.</p>
+</div>
+<div class="section" id="id10">
+<h2>Поравнање објеката<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>За прецизно поравнање објеката можеш да користиш помоћне линије, мрежу или опцију  Object → Align and Distribute.
+Отвара се прозор у коме се налазе опције за поравнање објеката (Align) и усклађивање размака (Distribute) измећу објеката.
+На иконама свих ових опција је приказана црвена линија која означава на шта се односи поравнавање или размак.</p>
+<a class="reference internal image-reference" href="../_images/L39S24.png"><img alt="../_images/L39S24.png" class="align-center" src="../_images/L39S24.png" style="width: 400px;" /></a>
+<p>У секцији Align налази се падајућа листа Relative to у којој можеш да одабереш опције по којима ће се елементи поравнати.
+Елементи се могу поравнати по:</p>
+<ul class="simple">
+<li><p>тренутној селекцији (Selection Area),</p></li>
+<li><p>цртежу (Drawing),</p></li>
+<li><p>страници (Page),</p></li>
+<li><p>најмањем објекту у селекцији (Smallest object),</p></li>
+<li><p>највећем објекту у селекцији (Biggest object),</p></li>
+<li><p>првом селектованом елементу у селекцији (First selected) или</p></li>
+<li><p>задњем селектованом елементу у селекцији (Last selected).</p></li>
+</ul>
+<p>Да би се направио размак између објеката потребно је да се користе опције из одељка Distributе. Означиш све објекте у којима је потребно применити једнак размак и одабереш неку од опција за распоређивање објеката. У одељку Rearrange бираш опције за промену редоследа објеката у селекцији, а у одељку Remove overlaps уклањаш преклапања објеката по хоризонтали или вертикали. Промене вршиш кликом на дугме  <a class="reference internal" href="../_images/L39S25.png"><img alt="d9" src="../_images/L39S25.png" style="width: 30px;" /></a>.</p>
+</div>
+<div class="section" id="id11">
+<h2>Симетрично пресликавање<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p>За симетрично пресликавање објеката користиш опцију Path → Path Effects. Први корак за симетрично пресликавање објекта је да је он селектован. Отвара се прозор у коме је потребно да кликнеш на дугме <a class="reference internal" href="../_images/L39S26.png"><img alt="d10" src="../_images/L39S26.png" style="width: 30px;" /></a> чиме се отвара додатни прозор у коме бираш жељени ефекат.</p>
+<a class="reference internal image-reference" href="../_images/L39S27.png"><img alt="../_images/L39S27.png" class="align-center" src="../_images/L39S27.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../_images/L39S28.png"><img alt="../_images/L39S28.png" class="align-center" src="../_images/L39S28.png" style="width: 800px;" /></a>
+<p>За симетрично пресликавање бираш опцију Mirror symmetry.</p>
+<a class="reference internal image-reference" href="../_images/L39S29.png"><img alt="../_images/L39S29.png" class="align-center" src="../_images/L39S29.png" style="width: 800px;" /></a>
+</div>
+<div class="section" id="id12">
+<h2>Груписање и разлагање објеката<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p>Више објеката на страници може формирати једну групу. Једном када су објекти у групи, са њима можеш заједно манипулисати, тачније, група делује као један објекат. Групе објеката се могу угнеждавати; то јест, група се може комбиновати са другим групама или објектима како би се формирала нова група вишег нивоа.
+Групу формираш од селектованих објеката кликом на опцију <a class="reference internal" href="../_images/L39S30.png"><img alt="d11" src="../_images/L39S30.png" style="width: 30px;" /></a>. Селектовану групу разлажемо на појединачне објекте кликом на опцију <a class="reference internal" href="../_images/L39S31.png"><img alt="d12" src="../_images/L39S31.png" style="width: 30px;" /></a>.</p>
+</div>
+<div class="section" id="id13">
+<h2>Векторизација растерске слике<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p>Ако желиш да увећаш неку растерску слику (било која фотографија), која се састоји од пиксела добићеш мутну и неквалитетну слику. Ако такву фотографију/слику желиш да увећаш потребно је да је претвориш у векторски цртеж, графички формат који не губи квалитет приликом овакве трансформације.</p>
+<p>Претварање растерске слике у векторску врши се коришћењем опције Path → Trace Bitmap</p>
+<p>Избором већег броја скенирања (Scans) и избором из листе више боја (Colors) добија се квалитетнија векторска слика.</p>
+
+    <div class="note-wrapper infonote-type">
+        <div class="note-icon-holder"> </div>
+        <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
+        <div class="course-content">
+            <p>
+<dl class="simple">
+<dt><strong>Укратко</strong></dt><dd><ul class="simple">
+<li><p>Објекти постављени на страници нису у истој равни, већ су поређани по нивоима. Сваки нови објекат налази се на нивоу изнад претходног.</p></li>
+<li><p>Редослед селектованих објекта можемо да мењамо коришћењем наредби: подигни (Raise), спусти (Lower), подигни на врх (Raise to Top), спусти на дно (Lower to Bottom) из менија Object.</p></li>
+<li><p>Поред селекције, померања и ротирања, објекте можемо да копирамо, групишемо, поравнавамо, мењамо им боју или провидност и на тај начин додатно уређујемо векторску графику.</p></li>
+<li><p>За симетрично пресликавање објеката користимо помоћни мени Path Effects из менија Path.</p></li>
+<li><p>Више објеката на страници може формирати једну групу. Једном када су објекти у групи, њима се може истовремено манипулисати (премештати, копирати, мењати боју,…).</p></li>
+<li><p>Векторизација је процес претварања растерске слике у векторску.</p></li>
+</ul>
+</dd>
+</dl>
+
+    </p></div></div>
+</div>
+</div>
+
+
+    </div>
+    
+    <div>
+<div class="lecture-prev-next-toggle">
+  <a  href="index.html" id="prevLectureLink" class="lecture-toggler-arrows"><i class="fas fa-arrow-left fa"></i> <span> Претходна лекција </span> </a>
+  
+  <a id="nextLectureLink" class="lecture-toggler-arrows"><span> Следећа лекција</span>  <i class="fas fa-arrow-right fa"></i> </a>
+</div>
+
+<script type="text/javascript">
+  $('#relations-prev').tooltip({'placement':'right', 'selector': '', 'delay': { show: 100, hide: 50}});
+  $('#relations-next').tooltip({'placement':'left', 'selector': '', 'delay': { show: 100, hide: 50}});
+</script>
+</div>
+
+    
+  </div>
+</div>
+
+<div class="petljadoc-resources">
+  <span class="pull-left">(Created using  <a href="https://pypi.org/project/Sphinx/">Swinx</a>, <a href="http://runestoneinteractive.org/">RunestoneComponents</a> and <a href="https://github.com/Petlja/PetljaDoc">PetljaDoc</a>) <br> © 2022 Petlja</span>
+</div>
+
+
+<div class="lectureToolbox">
+
+  <label class="font-size-toggle" id="fontSizeToggle">
+
+      <i class="fas fa-font"></i><label>Слова</label>
+  </label>
+  <div class="font-change d-none" id="fontChangeModal">
+      <span class="dec-letter-icon" id="decLetterIcon">A-</span>
+      <label id="currentFontSize">16</label>
+      <span class="inc-letter-icon" id="incLetterIcon">A+</span>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>

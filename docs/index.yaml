@@ -1,6 +1,3 @@
-archived-lessons:
-- guid: 3ced8ac6-8be7-4921-bea7-dccf89a7cc79
-- guid: 29a3a23a-0cdb-4a2b-ad6b-611d36c39db5
 courseId: kurs-treci-ikt
 description:
   externalLinks: []
@@ -70,218 +67,216 @@ lang: sr-Cyrl
 lessons:
 - activities:
   - description: ''
-    file: Рачунарска_графика.html
+    file: rac_graf.html
     guid: f89c7e23-215e-4251-9e31-da35e4e6f6ea
-    src: Рачунарска_графика.rst
+    src: rac_graf.rst
     title: Рачунарска графика
     type: reading
   archived-activities: []
   description: Предлекција
-  folder: 1_РГ
+  folder: 1_rg
   guid: 160c2ee6-8bbb-49c5-a1b2-5668eacd7527
   normalized_title: Рачунарска графика
   title: Рачунарска графика
 - activities:
   - description: ''
-    file: Час_Увод_у_рачунарску_графику.html
+    file: 1_1_cas.html
     guid: 71c00155-f7f3-410d-8019-e88d22cb7f01
-    src: Час_Увод_у_рачунарску_графику.rst
+    src: 1_1_cas.rst
     title: Увод у рачунарску графику
     type: reading
-  - description: '...'
-    file: Квиз_Увод_у_рачунарску_графику.html
+  - description: ''
+    file: 1_2_kviz.html
     guid: a725f29a-b323-4a1a-b52d-6eae141bc243
-    src: Квиз_Увод_у_рачунарску_графику.rst
+    src: 1_2_kviz.rst
     title: Квиз. Увод у рачунарску графику
     type: quiz
-  archived-activities:
-  - guid: de4d8ced-7457-4257-a156-250bdb711d65
-  - guid: 22752682-f23f-4df7-b590-e22780fda0a3
+  archived-activities: []
   description: Прва лекција
-  folder: Час 1. Увод у рачунарску графику
+  folder: 1_uvod
   guid: c2c651cd-53d9-4a3d-ba4f-650b8422f0bc
   normalized_title: 1. Увод у рачунарску графику
   title: 1. Увод у рачунарску графику
 - activities:
   - description: ''
-    file: Час_Радно_окружење_програма_за_обраду_растерске_графике.html
+    file: 2_1_uvod.html
     guid: 4576c9a4-2071-4a21-b221-a646477e05be
-    src: Час_Радно_окружење_програма_за_обраду_растерске_графике.rst
+    src: 2_1_uvod.rst
     title: Радно окружење програма за обраду растерске графике
     type: reading
   - description: ''
-    file: Вежбаоница_Радно_окружење_програма_за_обраду_растерске_графике.html
+    file: 2_2_vez.html
     guid: 863677ff-9d8b-4766-bfa5-8ed69a2bef9e
-    src: Вежбаоница_Радно_окружење_програма_за_обраду_растерске_графике.rst
+    src: 2_2_vez.rst
     title: Вежбаоница. Радно окружење програма за обраду растерске графике
     type: reading
-  - description: '...'
-    file: Квиз_Радно_окружење_програма_за_обраду_растерске_графике.html
+  - description: ''
+    file: 2_3_kviz.html
     guid: 0bad2e4e-6886-4e8d-bdac-d978c6fe326b
-    src: Квиз_Радно_окружење_програма_за_обраду_растерске_графике.rst
+    src: 2_3_kviz.rst
     title: Квиз. Радно окружење програма за обраду растерске графике
     type: quiz
   archived-activities: []
   description: Друга лекција
-  folder: Час 2. Радно окружење програма за обраду растерске графике
+  folder: 2_program
   guid: c79a8591-ad06-4e46-9d4d-8ecb5361cf8c
   normalized_title: 2. Радно окружење програма за обраду растерске графике
   title: 2. Радно окружење програма за обраду растерске графике
 - activities:
   - description: ''
-    file: Час_Оптимизација_слике_за_штампање_и_ради_објављивања_на_интернету.html
+    file: 3_1_cas.html
     guid: 7fc7537f-de6d-49cc-97fa-04de9739de0d
-    src: Час_Оптимизација_слике_за_штампање_и_ради_објављивања_на_интернету.rst
+    src: 3_1_cas.rst
     title: Оптимизација слике за штампање и ради објављивања на интернету
     type: reading
   - description: ''
-    file: Вежбаоница_Оптимизација_слике_за_штампање_и_ради_објављивања_на_интернету.html
+    file: 3_2_vez.html
     guid: 0c7cf760-1c23-4318-aca3-0bc107525df1
-    src: Вежбаоница_Оптимизација_слике_за_штампање_и_ради_објављивања_на_интернету.rst
+    src: 3_2_vez.rst
     title: Вежбаоница. Оптимизација слике за штампање и ради објављивања на интернету
     type: reading
   - description: '...'
-    file: Квиз_Оптимизација_слике_за_штампање_и_ради_објављивања_на_интернету.html
+    file: 3_3_kviz.html
     guid: 619d965d-2506-4ad8-8dda-90f325a7c1e5
-    src: Квиз_Оптимизација_слике_за_штампање_и_ради_објављивања_на_интернету.rst
+    src: 3_3_kviz.rst
     title: Квиз. Оптимизација слике за штампање и ради објављивања на интернету
     type: quiz
   archived-activities: []
   description: Трећа лекција
-  folder: Час 3. Оптимизација слике за штампање и ради објављивања на интернету
+  folder: 3_optimizacija
   guid: 74c04e04-f7e3-41e4-a870-89fc52b5ac54
   normalized_title: 3. Оптимизација слике за штампање и ради објављивања на интернету
   title: 3. Оптимизација слике за штампање и ради објављивања на интернету
 - activities:
   - description: ''
-    file: Час_Практична_вежба1.html
+    file: 4_vezba.html
     guid: d9317990-83bb-4c4c-b622-0763cd7b44c8
-    src: Час_Практична_вежба1.rst
+    src: 4_vezba.rst
     title: Практична вежба
     type: reading
   archived-activities: []
   description: Четврта лекција
-  folder: Час 4. Практична вежба
+  folder: 4_vezba
   guid: 07a6abd5-4232-40e7-90f8-eee4ce286f2c
   normalized_title: 4. Практична вежба
   title: 4. Практична вежба
 - activities:
   - description: ''
-    file: Час_Обрада_растерске_слике.html
+    file: 5_1_cas.html
     guid: 434f2a47-a4f1-4e49-ba2d-41ed81dccb9a
-    src: Час_Обрада_растерске_слике.rst
+    src: 5_1_cas.rst
     title: Обрада растерске слике
     type: reading
-  - description: '...'
-    file: Квиз_Обрада_растерске_слике.html
+  - description: ''
+    file: 5_2_kviz.html
     guid: ec98bc43-ef03-486e-8b04-90441602158a
-    src: Квиз_Обрада_растерске_слике.rst
+    src: 5_2_kviz.rst
     title: Квиз. Обрада растерске слике
     type: quiz
   archived-activities: []
   description: Пета лекција
-  folder: Час 5. Обрада растерске слике
+  folder: 5_obrada_raster
   guid: 64ae34d2-55c0-4e2c-a892-c00b943bbc53
   normalized_title: 5. Обрада растерске слике
   title: 5. Обрада растерске слике
 - activities:
   - description: ''
-    file: Час_Практична_вежба2.html
+    file: 6_vezba.html
     guid: 12bfa4b4-c3f8-4c44-953d-2cb7468d77af
-    src: Час_Практична_вежба2.rst
+    src: 6_vezba.rst
     title: Практична вежба
     type: reading
   archived-activities: []
   description: Шеста лекција
-  folder: Час 6. Практична вежба
+  folder: 6_vezba
   guid: 8299ffd1-3ebe-4490-bf59-51fafabd0647
   normalized_title: 6. Практична вежба
   title: 6. Практична вежба
 - activities:
   - description: ''
-    file: Час_Радно_окружење_програма_за_креирање_векторске_графике.html
+    file: 7_1_cas.html
     guid: 00610992-65df-4994-a124-30e327ff3ee7
-    src: Час_Радно_окружење_програма_за_креирање_векторске_графике.rst
+    src: 7_1_cas.rst
     title: Радно окружење програма за креирање векторске графике
     type: reading
   - description: ''
-    file: Вежбаоница_Радно_окружење_програма_за_креирање_векторске_графике.html
+    file: 7_2_vez.html
     guid: 8cd1285d-295c-4f0f-bbc5-8571fdbe9111
-    src: Вежбаоница_Радно_окружење_програма_за_креирање_векторске_графике.rst
+    src: 7_2_vez.rst
     title: Вежбаоница. Радно окружење програма за креирање векторске графике
     type: reading
-  - description: '...'
-    file: Квиз_Радно_окружење_програма_за_креирање_векторске_графике.html
+  - description: ''
+    file: 7_3_kviz.html
     guid: 0982f3fc-7c7c-4cf6-b286-b94173f895d6
-    src: Квиз_Радно_окружење_програма_за_креирање_векторске_графике.rst
+    src: 7_3_kviz.rst
     title: Квиз. Радно окружење програма за креирање векторске графике
     type: quiz
   archived-activities: []
   description: Седма лекција
-  folder: Час 7. Радно окружење програма за креирање векторске графике
+  folder: 7_inkscape
   guid: 52179839-3357-4735-90ed-9cc0de0d4dbe
   normalized_title: 7. Радно окружење програма за креирање векторске графике
   title: 7. Радно окружење програма за креирање векторске графике
 - activities:
   - description: ''
-    file: Час_Цртање_основних_графичких_елемената.html
+    file: 8_1_cas.html
     guid: 9d67115b-acf0-4e91-a859-fc380b13f5bb
-    src: Час_Цртање_основних_графичких_елемената.rst
+    src: 8_1_cas.rst
     title: Цртање основних графичких елемената
     type: reading
   - description: ''
-    file: Вежбаоница_Цртање_основних_графичких_елемената.html
+    file: 8_2_vez.html
     guid: 1efa5cbf-57b4-4a72-9668-da9a948c0520
-    src: Вежбаоница_Цртање_основних_графичких_елемената.rst
+    src: 8_2_vez.rst
     title: Вежбаоница. Цртање основних графичких елемената
     type: reading
-  - description: '...'
-    file: Квиз_Цртање_основних_графичких_елемената.html
+  - description: ''
+    file: 8_3_kviz.html
     guid: cf1e79fb-f9af-450b-b5ec-2a889e7b2fb6
-    src: Квиз_Цртање_основних_графичких_елемената.rst
+    src: 8_3_kviz.rst
     title: Квиз. Цртање основних графичких елемената
     type: quiz
   archived-activities: []
   description: Осма лекција
-  folder: Час 8. Цртање основних графичких елемената
+  folder: 8_crtanje
   guid: be334505-9915-47f7-8df7-854aa194fde8
   normalized_title: 8. Цртање основних графичких елемената
   title: 8. Цртање основних графичких елемената
 - activities:
   - description: ''
-    file: Час_Операције_над_објектима.html
+    file: 9_1_cas.html
     guid: 00994394-e3d7-4292-a691-0d5e59fc480f
-    src: Час_Операције_над_објектима.rst
+    src: 9_1_cas.rst
     title: Операције над објектима
     type: reading
   - description: ''
-    file: Вежбаоница_Операције_над_објектима.html
+    file: 9_2_vez.html
     guid: 6ef8c677-af3c-406e-8fff-17fc04793296
-    src: Вежбаоница_Операције_над_објектима.rst
+    src: 9_2_vez.rst
     title: Вежбаоница. Операције над објектима
     type: reading
-  - description: '...'
-    file: Квиз_Операције_над_објектима.html
+  - description: ''
+    file: 9_3_kviz.html
     guid: 6f83d9fa-8d5d-4149-a0ea-5b5e091e7d95
-    src: Квиз_Операције_над_објектима.rst
+    src: 9_3_kviz.rst
     title: Квиз. Операције над објектима
     type: quiz
   archived-activities: []
   description: Девета лекција
-  folder: Час 9. Операције над објектима
+  folder: 9_operacije
   guid: a5bee795-4f08-429a-8059-de60ec3c12d0
   normalized_title: 9. Операције над објектима
   title: 9. Операције над објектима
 - activities:
   - description: ''
-    file: Час_Практична_вежба3.html
+    file: 10_vez.html
     guid: 8912ebb0-cd77-44f3-a971-0d4fc39780f5
-    src: Час_Практична_вежба3.rst
+    src: 10_vez.rst
     title: Практична вежба
     type: reading
   archived-activities: []
   description: Десета лекција
-  folder: Час 10. Практична вежба
+  folder: 10_vezba
   guid: fab4fd40-5a52-48ce-8957-c5af6e72b697
   normalized_title: 10. Практична вежба
   title: 10. Практична вежба

@@ -6,6 +6,7 @@
     <title>Час. Операције над објектима</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -348,27 +350,33 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>На овом часу научићеш о:</p>
 <ul class="simple">
 <li><p>oперацијама над објектима;</p></li>
 <li><p>векторизацији растерске слике.</p></li>
 </ul>
 
-    </p></div></div>
+    </div></div>
 <p>Основна алатка у програму Inkscape jе алатка за селекцију <a class="reference internal" href="../_images/L39S1.png"><img alt="d1" src="../_images/L39S1.png" style="width: 30px;" /></a>. Користи се за манипулацију објектима (померање, промена величине, ротација…). Ако желиш да вршиш неке измене на објекту, мораш да га најпре селектујеш.</p>
 <div class="section" id="id2">
 <h2>Померање објеката<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>Када означиш објекат коришћењем алатке за селекцију <a class="reference internal" href="../_images/L39S1.png"><img alt="d1" src="../_images/L39S1.png" style="width: 30px;" /></a>, око објекта се формира оквир са 8 двостраних стрелица.</p>
-<a class="reference internal image-reference" href="../_images/L39S2.png"><img alt="../_images/L39S2.png" class="align-center" src="../_images/L39S2.png" style="width: 400px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S2.png"><img alt="../_images/L39S2.png" src="../_images/L39S2.png" style="width: 400px;" /></a>
+</div>
 <p>Као што смо већ више пута поновили, објекат можеш да помераш само када је селектован (уоквирен) и то превлачењем мишем или употребом стрелица на тастатури. Притиском на стрелице са тастатуре објекат се помера у жељеном смеру за 2 пиксела. Када су у исто време притисни тастер Shift и стрелице са тастатуре, померање је 10 пута веће (20 пиксела).Напомена, ово померање можеш да подесиш у опцији Preferences из менија Edit. У том прозору у одељку Behavior, одабереш опцију Steps, у којој подешаваш број пиксела за које се врши померање објеката.</p>
 </div>
 <div class="section" id="id3">
 <h2>Редослед објеката<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Објекти које постављамо на страницу нису у истој равни, већ су поређани по нивоима. Сваки нови објекат налази се на нивоу изнад претходног.</p>
-<a class="reference internal image-reference" href="../_images/L39S3.png"><img alt="../_images/L39S3.png" class="align-center" src="../_images/L39S3.png" style="width: 400px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S3.png"><img alt="../_images/L39S3.png" src="../_images/L39S3.png" style="width: 400px;" /></a>
+</div>
 <p>Редослед означеног објекта можеш да промениш применом алатки:</p>
-<a class="reference internal image-reference" href="../_images/L39S4.png"><img alt="../_images/L39S4.png" class="align-center" src="../_images/L39S4.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S4.png"><img alt="../_images/L39S4.png" src="../_images/L39S4.png" style="width: 300px;" /></a>
+</div>
 <p>Raise помера означени објекат на горе за један ниво;
 Lower помера означени објекат на доле за један ниво;
 Raise to Top помера означени објекат на врх, на први ниво;
@@ -382,13 +390,19 @@ Lower to Bottom помера означени објекат на дну, на �
 <div class="section" id="id5">
 <h2>Ротирање и нагињање објеката<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>Ако желиш да ротираш или нагињеш објекат потребно је да га прво селектујеш, а затим на тако селектовани објекат још једном кликнеш примарним тастером миша. Око селектованог објекта двостране стрелице мењају облик.</p>
-<a class="reference internal image-reference" href="../_images/L39S5.png"><img alt="../_images/L39S5.png" class="align-center" src="../_images/L39S5.png" style="width: 200px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S5.png"><img alt="../_images/L39S5.png" src="../_images/L39S5.png" style="width: 200px;" /></a>
+</div>
 <p>Објекат ротираш тако што повлачиш одговарајуће двостране стрелице, које се налази на углу селектованог објекта.</p>
 <p>Објекат вертикално нагињеш тако што повлачиш двостране стрелице која се налази на средини странице оквира селектованог објекта (са леве и десне стране).</p>
 <p>Објекат хоризонтално нагињеш тако што повлачиш двостране стрелице која се налази на средини странице оквира селектованог објекта (горе и доле).</p>
-<a class="reference internal image-reference" href="../_images/L39S6.png"><img alt="../_images/L39S6.png" class="align-center" src="../_images/L39S6.png" style="width: 400px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S6.png"><img alt="../_images/L39S6.png" src="../_images/L39S6.png" style="width: 400px;" /></a>
+</div>
 <p>За прецизнију манипулацију над селектованим објектима можеш да користиш и опције из менија Object →  Transform. Отвара се прозор у коме можеш да изабереш једну од четири картице Move, Scale, Rotate и Skew, у којима подешаваш померања објекта (по хоризонтали и вертикали), промену величине објекта (ширина и висина, одабиром опције могуће је и пропорцијална промена величине), ротирање (одабир вредости угла одабиром жељене мерне јединице и смера ротације, у смеру казаљке на сату или у смеру супротном од смера казаљке на сату) и нагињање објекта (угао по вертикали и хоризонтали).</p>
-<a class="reference internal image-reference" href="../_images/L39S7.png"><img alt="../_images/L39S7.png" class="align-center" src="../_images/L39S7.png" style="width: 700px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S7.png"><img alt="../_images/L39S7.png" src="../_images/L39S7.png" style="width: 700px;" /></a>
+</div>
 <p>У свим овим картицама могуће је одабрати и да се трансформације примењују на појединачне објекте селектоване групе објеката. Кликом на дугме Apply све промене ће бити примењене.</p>
 </div>
 <div class="section" id="id6">
@@ -399,11 +413,13 @@ Lower to Bottom помера означени објекат на дну, на �
 <h2>Уређивање објеката<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>Објекте можеш да уређујеш тако што од постојећих правиш нове. Ако користиш алатку <a class="reference internal" href="../_images/L39S8.png"><img alt="d2" src="../_images/L39S8.png" style="width: 30px;" /></a> довољно је да кликнеш на објекат и он је спреман за модификовање. Приказаће се чворови беле боје. Њиховим повлачењем мењаш изглед делова објекта.</p>
 <p>За детаљније уређивање објеката, попут измене углова правоугаоника и додавања нових чворова неопходно је да објекте претворимо у путање (Path). То чиниш тако што селектујеш објекат и из менија Path одабереш опцију Object to Path. Када је објекат претворен у путању на располагању су нам 4 различите врсте чворова  cusp, smooth, symmetric, auto-smooth.</p>
-<a class="reference internal image-reference" href="../_images/L39S9.png"><img alt="../_images/L39S9.png" class="align-center" src="../_images/L39S9.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/8_13.png"><img alt="../_images/8_13.png" src="../_images/8_13.png" style="width: 800px;" /></a>
+</div>
 <p>Угаони чворови (cusp) намењени су за креирање оштрих углова, smooth и symmetric за креирање кривих, а auto-smooth за креирање идеално глатких кривих. За подешавање одговарајуће врсте чвора потребно је да кликнеш на постојећи чвор, а затим да одабереш једну од опција <a class="reference internal" href="../_images/L39S10.png"><img alt="d3" src="../_images/L39S10.png" style="width: 30px;" /></a>.</p>
 <p>Објекат мењамо тако што повлачимо бели круг одговарајућег чвора.</p>
 <p>За додавање новог чвора довољно је да два пута кликнеш (двоклик) на жељено место на објекту. Да би чвор био обрисан, потребно је да га означиш, а затим притиснеш тастер Delete.
-Додавање и брисање чворова можемо да обавимо опцијама <a class="reference internal" href="../_images/L39S11.png"><img alt="d4" src="../_images/L39S11.png" style="width: 130px;" /></a>.</p>
+Додавање и брисање чворова можемо да обавимо опцијама <a class="reference internal" href="../_images/8_3_1.png"><img alt="d4" src="../_images/8_3_1.png" style="width: 130px;" /></a>.</p>
 <p>Осим стандардних опција за обликовање текста, могуће је да текст поставиш на неки елемент, било да је он правилан или не. Да би то било могуће, потребно је да креираш неку путању,
 објекат и унесеш жељени текст. Следећи корак је да означиш текст и објекат, а затим, одабереш опцију  Put on Path из менија Text.
 Текст уклањаш са путање или објекта тако што одабереш опцију Remove from Path из менија Text.
@@ -413,27 +429,43 @@ Lower to Bottom помера означени објекат на дну, на �
 <h2>Комбиновање објеката<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <p>Интересантна опција у програму Inkscape је комбиновање објеката, односно креирање новог објекта уклапањем једног или више постојећих.
 Објекте комбинујеш тако што превучеш један објекат преко другог, селектујеш оба и одабереш начин комбиновања (Union, Difference, Intersection, Exclusion, Divison, Cut Path) из менија Path.</p>
-<a class="reference internal image-reference" href="../_images/L39S12.png"><img alt="../_images/L39S12.png" class="align-center" src="../_images/L39S12.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/8_14.png"><img alt="../_images/8_14.png" src="../_images/8_14.png" style="width: 400px;" /></a>
+</div>
 <p>Имамо почетни облик као на доњој слици:</p>
-<a class="reference internal image-reference" href="../_images/L39S13.png"><img alt="../_images/L39S13.png" class="align-center" src="../_images/L39S13.png" style="width: 200px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S13.png"><img alt="../_images/L39S13.png" src="../_images/L39S13.png" style="width: 200px;" /></a>
+</div>
 <p>Операције комбиновања објеката:</p>
 <p>Унија (Union): Нови објекат садржи сва подручја изворних објеката, осим спојева између елемената, који су избрисани и претворени у један објекат.</p>
-<a class="reference internal image-reference" href="../_images/L39S14.png"><img alt="../_images/L39S14.png" class="align-center" src="../_images/L39S14.png" style="width: 200px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S14.png"><img alt="../_images/L39S14.png" src="../_images/L39S14.png" style="width: 200px;" /></a>
+</div>
 <p>Разлика (Difference): Ако је потребно да обришеш доњи објекат помоћу горњег, али само разликом, тј. оним подручјем где се два објекта преклапају.</p>
-<a class="reference internal image-reference" href="../_images/L39S15.png"><img alt="../_images/L39S15.png" class="align-center" src="../_images/L39S15.png" style="width: 170px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S15.png"><img alt="../_images/L39S15.png" src="../_images/L39S15.png" style="width: 170px;" /></a>
+</div>
 <p>Пресек (Intersection): Нови објекат настаје од преклапајућег тј. заједничког подручја изворних објеката.</p>
-<a class="reference internal image-reference" href="../_images/L39S16.png"><img alt="../_images/L39S16.png" class="align-center" src="../_images/L39S16.png" style="width: 170px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S16.png"><img alt="../_images/L39S16.png" src="../_images/L39S16.png" style="width: 170px;" /></a>
+</div>
 <p>Искључење (Exclusion): Користи се ако желиш да искључиш два или више објеката у њиховим преклапањима.</p>
-<a class="reference internal image-reference" href="../_images/L39S17.png"><img alt="../_images/L39S17.png" class="align-center" src="../_images/L39S17.png" style="width: 200px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S17.png"><img alt="../_images/L39S17.png" src="../_images/L39S17.png" style="width: 200px;" /></a>
+</div>
 <p>Подела (Divison): Ако желиш да извршиш дељење објеката који се преклапају.</p>
-<a class="reference internal image-reference" href="../_images/L39S18.png"><img alt="../_images/L39S18.png" class="align-center" src="../_images/L39S18.png" style="width: 200px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S18.png"><img alt="../_images/L39S18.png" src="../_images/L39S18.png" style="width: 200px;" /></a>
+</div>
 <p>Одрезивање (Cut Path): За одрезивање елемената по ивица објекта, где је објекат нижег нивоа одрезан елементом вишег нивоа. Новоформирани објекат нема никакву боју унутрашње области.</p>
-<a class="reference internal image-reference" href="../_images/L39S19.png"><img alt="../_images/L39S19.png" class="align-center" src="../_images/L39S19.png" style="width: 200px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L39S19.png"><img alt="../_images/L39S19.png" src="../_images/L39S19.png" style="width: 200px;" /></a>
+</div>
 <p>Поступак комбиновања објеката можеш погледати на доњем видеу:</p>
 
     <div  id="4BalqI0w_so" class="ytvideo"  style="text-align: center; margin: 15px; cursor:pointer;">
         <div style="background-image: url('https://img.youtube.com/vi/4BalqI0w_so/mqdefault.jpg'); background-repeat: no-repeat;background-position: center; height: 210px; width: 310px; margin: 0 auto; border: 1px solid #20c997">
-            <img src="/_static/images/play_button.svg" style="margin-top: 78px;" /> 
+            <img src="../_static/images/play_button.svg" style="margin-top: 78px;" /> 
         </div>
       
 
@@ -461,7 +493,9 @@ Lower to Bottom помера означени објекат на дну, на �
 <p>За прецизно поравнање објеката можеш да користиш помоћне линије, мрежу или опцију  Object → Align and Distribute.
 Отвара се прозор у коме се налазе опције за поравнање објеката (Align) и усклађивање размака (Distribute) измећу објеката.
 На иконама свих ових опција је приказана црвена линија која означава на шта се односи поравнавање или размак.</p>
-<a class="reference internal image-reference" href="../_images/L39S24.png"><img alt="../_images/L39S24.png" class="align-center" src="../_images/L39S24.png" style="width: 400px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L39S24.png"><img alt="../_images/L39S24.png" class="screenshot-shadow" src="../_images/L39S24.png" style="width: 400px;" /></a>
+</div>
 <p>У секцији Align налази се падајућа листа Relative to у којој можеш да одабереш опције по којима ће се елементи поравнати.
 Елементи се могу поравнати по:</p>
 <ul class="simple">
@@ -478,10 +512,16 @@ Lower to Bottom помера означени објекат на дну, на �
 <div class="section" id="id11">
 <h2>Симетрично пресликавање<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>За симетрично пресликавање објеката користиш опцију Path → Path Effects. Први корак за симетрично пресликавање објекта је да је он селектован. Отвара се прозор у коме је потребно да кликнеш на дугме <a class="reference internal" href="../_images/L39S26.png"><img alt="d10" src="../_images/L39S26.png" style="width: 30px;" /></a> чиме се отвара додатни прозор у коме бираш жељени ефекат.</p>
-<a class="reference internal image-reference" href="../_images/L39S27.png"><img alt="../_images/L39S27.png" class="align-center" src="../_images/L39S27.png" style="width: 400px;" /></a>
-<a class="reference internal image-reference" href="../_images/L39S28.png"><img alt="../_images/L39S28.png" class="align-center" src="../_images/L39S28.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L39S27.png"><img alt="../_images/L39S27.png" class="screenshot-shadow" src="../_images/L39S27.png" style="width: 400px;" /></a>
+</div>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L39S28.png"><img alt="../_images/L39S28.png" class="screenshot-shadow" src="../_images/L39S28.png" style="width: 800px;" /></a>
+</div>
 <p>За симетрично пресликавање бираш опцију Mirror symmetry.</p>
-<a class="reference internal image-reference" href="../_images/L39S29.png"><img alt="../_images/L39S29.png" class="align-center" src="../_images/L39S29.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L39S29.png"><img alt="../_images/L39S29.png" class="screenshot-shadow" src="../_images/L39S29.png" style="width: 800px;" /></a>
+</div>
 </div>
 <div class="section" id="id12">
 <h2>Груписање и разлагање објеката<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
@@ -498,7 +538,7 @@ Lower to Bottom помера означени објекат на дну, на �
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
 <dt><strong>Укратко</strong></dt><dd><ul class="simple">
 <li><p>Објекти постављени на страници нису у истој равни, већ су поређани по нивоима. Сваки нови објекат налази се на нивоу изнад претходног.</p></li>
@@ -511,7 +551,7 @@ Lower to Bottom помера означени објекат на дну, на �
 </dd>
 </dl>
 
-    </p></div></div>
+    </div></div>
 </div>
 </div>
 

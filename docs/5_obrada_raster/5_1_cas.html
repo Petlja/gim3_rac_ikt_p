@@ -6,6 +6,7 @@
     <title>Час. Обрада растерске слике</title>
     <link rel="stylesheet" type="text/css" href="../_static/activecode.css" />
     <link rel="stylesheet" type="text/css" href="../_static/codemirror.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/qchoice.css" />
     <link rel="stylesheet" type="text/css" href="../_static/clickable.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pytutor.css" />
     <link rel="stylesheet" type="text/css" href="../_static/modal-basic.css" />
@@ -108,6 +109,7 @@
     <script type="text/javascript" src="../_static/karelCorner.js"></script>
     <script type="text/javascript" src="../_static/karelRobot.js"></script>
     <script type="text/javascript" src="../_static/karelWorld.js"></script>
+    <script type="text/javascript" src="../_static/karelChat.js"></script>
     <script type="text/javascript" src="../_static/karelRobotDrawer.js"></script>
     <script type="text/javascript" src="../_static/karelUI.js"></script>
     <script type="text/javascript" src="../_static/karel.js"></script>
@@ -348,13 +350,13 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <p>На овом часу научићеш:</p>
 <ul class="simple">
 <li><p>да обрађујеш растерску слику у изабраном програму.</p></li>
 </ul>
 
-    </p></div></div>
+    </div></div>
 <p>Дигиталну слику можеш додатно да уређујеш тако што поред корекције на слици (нивоа осветљености, контраста, обојености…) и примене филтера да би се слика изоштрила, замутила или додали специјални ефекти, можеш да примениш и одређене геометријске трансформације над сликом.</p>
 <div class="section" id="id2">
 <h2>Основне геометријске трансформације слике<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
@@ -398,7 +400,9 @@
 <div class="section" id="id3">
 <h2>Ротација<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p>Ротирање селектованог дела слике вршиш тако што одабереш алатку за ротацију или  Tools → Transform Tools → Rotate. Кликом на дату опцију отвара се прозор у коме подешаваш угао (Angle) ротације тако што помераш клизач или уносиш бројну вредност. Такође, у овом прозору се дефинише и где ће се налазити центар ротације. На крају, потврђујеш избор кликом на дугме Rotate.</p>
-<a class="reference internal image-reference" href="../_images/L35S9.png"><img alt="../_images/L35S9.png" class="align-center" src="../_images/L35S9.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L35S9.png"><img alt="../_images/L35S9.png" class="screenshot-shadow" src="../_images/L35S9.png" style="width: 300px;" /></a>
+</div>
 </div>
 <div class="section" id="id4">
 <h2>Промена величине<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
@@ -406,50 +410,70 @@
 Кликом на дату опцију испод палете алатки отвара се део простора у коме можеш да извршиш промену димензије слике по ширини (Width) или по висини (Height).
 Уколико је катанац са десне стране закључан, димензије слике ће се мењати пропорционално, односно са променом једне димензије мењаће се сразмерно и друга како би се задржале пропорције слике.
 Уколико је катанац откључан, промена једне димензије слике неће утицати на другу димензију слике.</p>
-<a class="reference internal image-reference" href="../_images/L35S25.png"><img alt="../_images/L35S25.png" class="align-center" src="../_images/L35S25.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L35S25.png"><img alt="../_images/L35S25.png" class="screenshot-shadow" src="../_images/L35S25.png" style="width: 300px;" /></a>
+</div>
 </div>
 <div class="section" id="id5">
 <h2>Искошавање<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>Искошавање селектованог дела слике вршиш тако што одабереш алатку за искошавање или  Tools → Transform Tools → Shear. Кликом на дату опцију отвара се прозор у коме подешаваш угао искошавања тако што помераш клизач или уносиш бројну вредност. На крају, потврђујеш избор кликом на дугме Shear.</p>
-<a class="reference internal image-reference" href="../_images/L35S10.png"><img alt="../_images/L35S10.png" class="align-center" src="../_images/L35S10.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L35S10.png"><img alt="../_images/L35S10.png" class="screenshot-shadow" src="../_images/L35S10.png" style="width: 300px;" /></a>
+</div>
 <p>Опција се примењује кликом на део слике.</p>
 </div>
 <div class="section" id="id6">
 <h2>Преокретање<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>Преокретање селектованог дела слике вршиш тако што одабереш алатку за преокретање или  Tools → Transform Tools → Flip. Кликом на дату опцију испод палете алатки отвара се део простора у коме можеш да извршиш хоризонтално или вертикално преокретање слике, кликом на селектовани део слике.</p>
-<a class="reference internal image-reference" href="../_images/L35S11.png"><img alt="../_images/L35S11.png" class="align-center" src="../_images/L35S11.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L35S11.png"><img alt="../_images/L35S11.png" class="screenshot-shadow" src="../_images/L35S11.png" style="width: 300px;" /></a>
+</div>
 </div>
 <div class="section" id="id7">
 <h2>Клонирање<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>Клонирање дела слике вршиш тако што одабереш алатку за клонирање или Clone. Кликом на дату опцију врши се клонирање тако што се одабере део слике који се клонира у облику селектоване четке
 (Brush) притиском тастера Alt и кликом на део слике који се клонира, а затим постављањем миша на површину на коју желиш да клонираш селектовани део слике.</p>
-<a class="reference internal image-reference" href="../_images/L32S23.png"><img alt="../_images/L32S23.png" class="align-center" src="../_images/L32S23.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L32S23.png"><img alt="../_images/L32S23.png" class="screenshot-shadow" src="../_images/L32S23.png" style="width: 300px;" /></a>
+</div>
 </div>
 <div class="section" id="id8">
 <h2>Додавање текста на дигиталну слику<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <p>На било коју дигиталну слику у програму GIMP 2  можеш да додаш жељени текст.</p>
 <p>За додавање текста потребно је да отвориш слику на коју желиш да додаш текст или креираш нову слику на којој ће бити текст, а затим, одабереш опцију <a class="reference internal" href="../_images/L35S12.png"><img alt="b9" src="../_images/L35S12.png" style="width: 25px;" /></a> или Tools → Text и кликнеш примарним тастером миша на место на слици где желиш да поставиш текст.</p>
-<a class="reference internal image-reference" href="../_images/5.1.png"><img alt="../_images/5.1.png" class="align-center" src="../_images/5.1.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/5.1.png"><img alt="../_images/5.1.png" src="../_images/5.1.png" style="width: 800px;" /></a>
+</div>
 <p>Одабиром ове опције отвара се део простора у коме можеш да мењаш врсту фонта и величину фонта, подешаваш поравнавања текста, одабереш промене боје фонта.</p>
-<a class="reference internal image-reference" href="../_images/L35S14.png"><img alt="../_images/L35S14.png" class="align-center" src="../_images/L35S14.png" style="width: 250px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L35S14.png"><img alt="../_images/L35S14.png" src="../_images/L35S14.png" style="width: 250px;" /></a>
+</div>
 <p>Одабиром опције Use Editor отвара се прозор у коме можеш да унесеш жељени текст.</p>
-<a class="reference internal image-reference" href="../_images/5.2.png"><img alt="../_images/5.2.png" class="align-center" src="../_images/5.2.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/5.2.png"><img alt="../_images/5.2.png" src="../_images/5.2.png" style="width: 780px;" /></a>
+</div>
 <p>Осим наведених опција, када почнеш да уносиш текст на слици ће се појавити прозор у коме је могуће на бржи начин променити фонт и величину фонта, (1) стил фонта (2). Поред тога могуће је променити проред, размак између слова (3) као и боју текста (4).</p>
 <p>Текст можеш да упишеш и накнадно мењаш, само га претходно мораш означити. За поништавање оквира за унос текста можеш да притиснеш тастер [Esc] или да одабереш неки други алат у Toolbox.
 Можеш да креираш текст на прозирној позадини који можеш да користиш на интернету или да га поставиш преко неке слике.
 Код таквог текста ће се само видети слова, без икакве позадине, док ће се иза слова видети страница или слика на коју је постављен текст. Важно је да знаш да не подржавају сви формати слике прозирност, тако да прозирност слике најчешће чуваш у .png или.gif  формату.</p>
 <p>За израду прозирног текста прво је потребно да отвориш нову слику одабиром опције File → New. У датом прозору у делу Advanced Options из падајуће листе Fill with потребно је да одабереш опцију Transparency. И након одабира димензије слике, потврди избор кликом на дугме ОК.</p>
-<a class="reference internal image-reference" href="../_images/L35S16.png"><img alt="../_images/L35S16.png" class="align-center" src="../_images/L35S16.png" style="width: 700px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L35S16.png"><img alt="../_images/L35S16.png" src="../_images/L35S16.png" style="width: 780px;" /></a>
+</div>
 <p>Када унесеш текст, остатак слике можеш одсећи. На крају слику треба извести у неком од формата који одржава провидност.</p>
 <p>Горњи текст је постављен на слици која се састоји из три различита обојена правоугаоника. Без обзира на боју позадине, текст остаје прозиран.</p>
-<a class="reference internal image-reference" href="../_images/L35S17.png"><img alt="../_images/L35S17.png" class="align-center" src="../_images/L35S17.png" style="width: 700px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L35S17.png"><img alt="../_images/L35S17.png" src="../_images/L35S17.png" style="width: 780px;" /></a>
+</div>
 </div>
 <div class="section" id="id9">
 <h2>Слојеви<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <p>Један од најлакших начина за уређивање слике је коришћење слојева (Layers). Слојеви су делови слике који се користе при обради дигиталних слика за одвајање њених елемената.
 Могу се тумачити тако да је једна слика исцртана од више појединачних слика на провидним фолијама које су поређане једна на другу. Када поставиш све те цртеже један на други видећеш све цртеже одједном, тачније видећеш целу слику.</p>
 <p>На примеру доње слике можеш да видиш да се слика састоји од четири засебне слике.</p>
-<a class="reference internal image-reference" href="../_images/L35S18.png"><img alt="../_images/L35S18.png" class="align-center" src="../_images/L35S18.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/5_3_1.png"><img alt="../_images/5_3_1.png" class="screenshot-shadow" src="../_images/5_3_1.png" style="width: 800px;" /></a>
+</div>
 </div>
 <div class="section" id="id10">
 <h2>Додавање и брисање слојева<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
@@ -460,9 +484,13 @@
 <li><p>кликнеш на прво дугме у дну палете Layers <a class="reference internal" href="../_images/L35S19.png"><img alt="b10" src="../_images/L35S19.png" style="width: 200px;" /></a>.</p></li>
 </ul>
 <p>Одабром дате опције отвара се прозор у коме можеш да именујеш слој, подесиш његову резолуцију и означиш да ли ће бити провидан или испуњен бојом. Притиском на дугме OK додајеш слој у палету слојева.</p>
-<a class="reference internal image-reference" href="../_images/L35S20.png"><img alt="../_images/L35S20.png" class="align-center" src="../_images/L35S20.png" style="width: 600px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L35S20.png"><img alt="../_images/L35S20.png" src="../_images/L35S20.png" style="width: 780px;" /></a>
+</div>
 <p>На дну палете слојева, поред дугмета за додавање новог слоја,</p>
-<a class="reference internal image-reference" href="../_images/L35S19.png"><img alt="../_images/L35S19.png" class="align-center" src="../_images/L35S19.png" style="width: 300px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L35S19.png"><img alt="../_images/L35S19.png" src="../_images/L35S19.png" style="width: 300px;" /></a>
+</div>
 <p>налазе се редом:</p>
 <ul class="simple">
 <li><p>дугме за креирање нове групе слојева,</p></li>
@@ -474,7 +502,9 @@
 <li><p>дугме за брисање слоја.</p></li>
 </ul>
 <p>Поред опција за креирање нових слојева, копирања или брисања постојећих, у картици Layers слојеве можеш да учиниш видљивим или скривеним, повезаним или неповезаним, али да мењаш начин мешања (1), провидност (2) или да их закључаш (3).</p>
-<a class="reference internal image-reference" href="../_images/L35S21.png"><img alt="../_images/L35S21.png" class="align-center" src="../_images/L35S21.png" style="width: 400px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/5.9.png"><img alt="../_images/5.9.png" src="../_images/5.9.png" style="width: 400px;" /></a>
+</div>
 <p>Уколико картица Layers није приказана приликом покретања програма Gimp 2 можемо је приказати комбинацијом тастера Ctrl + L.</p>
 <p>Ако желиш да вршиш неке измене на неком слоју, тај слој мора да буде активан. Слој чиниш активним тако што кликнеш на његов назив у палети слојева. Кликом на дугме за брисање слоја (иконица кантице) можеш да избришеш само активан слој. Важно је да знаш да све измене вршиш само на активном слоју.</p>
 <p>Двоструким кликом на назив слоја можеш да промениш његов назив тако што унесеш ново име, а затим притиснеш тастер Enter.</p>
@@ -483,7 +513,9 @@
 <h2>Приказивање и сакривање слоја<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p>Доња слика је састављена од четири слоја, чија имена и редослед можеш да видиш у палети слојева. Испред слојева видљиве су две иконице (око и ланац).
 Ако је иконица ока приказана слој је видљив (приказан) у прозору за приказ слике, а ако није приказана, слој није видљив.</p>
-<a class="reference internal image-reference" href="../_images/L35S22.png"><img alt="../_images/L35S22.png" class="align-center" src="../_images/L35S22.png" style="width: 800px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/L35S22.png"><img alt="../_images/L35S22.png" src="../_images/L35S22.png" style="width: 800px;" /></a>
+</div>
 <p>Иконица ланца означава везу између два или више слојева. Када је видљива, слојеви су повезани и можеш да их заједно помераш употребом алата Move <a class="reference internal" href="../_images/L35S23.png"><img alt="b11" src="../_images/L35S23.png" style="width: 50px;" /></a>.</p>
 </div>
 <div class="section" id="id12">
@@ -497,7 +529,9 @@
 <p>Стапање (мешање) слојева одређује начин на који ће се пиксели који се налазе на доњем слоју преклопити (измешати) са пикселима који се налазе на горњем слоју. Почетно подешавање је Normal, чиме је обезбеђено да горњи слој у потпуности прекрива доњи (ако је непровидност подешена на 100%).</p>
 <p>У програму GIMP 2 постоји 21 начин мешања слојева који се приказују кликом на стрелицу поред опције Mode (Начин мешања). Неки од ових начина мешања слојева можеш да користиш за потамњивање слике (Multiply, Overlay), неке при раду са црно белим фотографијама (Dodge), а неке за отклањање ефекта црвених очију (Hue) који се понекад јавља приликом фотографисања дигиталним уређајима.
 У случају да део слике или целу слику желиш да копираш у неку другу слику, тај део ће се одмах поставити као нови „плутајући“ слој (Floating Selection (Pasted Layer)), па није потребно да правиш потпуно нов слој за тај део.</p>
-<a class="reference internal image-reference" href="../_images/L35S24_1.png"><img alt="../_images/L35S24_1.png" class="align-center" src="../_images/L35S24_1.png" style="width: 400px;" /></a>
+<div class="figure align-center">
+<a class="screenshot-shadow reference internal image-reference" href="../_images/L35S24_1.png"><img alt="../_images/L35S24_1.png" class="screenshot-shadow" src="../_images/L35S24_1.png" style="width: 400px;" /></a>
+</div>
 <p>Сада је потребно само да кликнеш десним кликом миша на тај „плутајући“ слој о одабереш опцију To New Layer. Тако ће се копирани део слике или слика аутоматски поставити у нов слој.</p>
 </div>
 <div class="section" id="id13">
@@ -510,7 +544,7 @@
         <div class="note-icon-holder"> </div>
         <img src="../_static/img/infonote-img.svg" class="note-image infonote-image" /> 
         <div class="course-content">
-            <p>
+            
 <dl class="simple">
 <dt><strong>Укратко</strong></dt><dd><ul class="simple">
 <li><p>Дигиталну слику додатно уређујеш тако што: вршиш корекцију слике (ниво осветљености, контраста, обојености…), примењујеш филтере да изоштриш, замутиш слику или додаш специјалне ефекте, примењујеш геометријске трансформације над сликом.</p></li>
@@ -519,7 +553,7 @@
 </dd>
 </dl>
 
-    </p></div></div>
+    </div></div>
 </div>
 </div>
 

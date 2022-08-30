@@ -8,13 +8,13 @@
 
 Икона 1.
 
-.. image:: ../../_images/L310S1.png
+.. image:: ../../_images/ikonica1.png
     :width: 200px
     :align: center 
 
 Икона 2.
 
-.. image:: ../../_images/L310S2.png
+.. image:: ../../_images/ikonica2.png
     :width: 200px
     :align: center 
 

@@ -7,7 +7,7 @@
 Преузети слику са `линкa <../../_images/BojaOčiju.jpg>`_:
 
 .. image:: ../../_images/BojaOčiju.jpg
-    :width: 600px
+    :width: 780px
     :align: center
 
 Сачувај је под именом Очи. 
@@ -26,7 +26,7 @@
 Сачувај доњу слику под именом Манастир.
 
 .. image:: ../../_images/Slika4.jpg
-    :width: 600px
+    :width: 780px
     :align: center
 
 Отвори ову слику у програму Gimp 2.
@@ -42,7 +42,7 @@
 Сачувај доњу слику под именом Споменик. 
 
 .. image:: ../../_images/Slika5.jpg
-    :width: 600px
+    :width: 780px
     :align: center
 
 Отвори ову слику у програму Gimp 2.

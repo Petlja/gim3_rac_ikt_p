@@ -12,7 +12,7 @@
 Преузети слику са `линка <../../_images/vodenica.jpg>`_: 
 
 .. image:: ../../_images/Slika6.jpg
-    :width: 600px
+    :width: 780px
     :align: center
 
 Преузету слику сачувај под именом Vodenica.
@@ -26,7 +26,7 @@
 Преузети слику са `овог линка <../../_images/toranj.jpg>`_: 
 
 .. image:: ../../_images/Slika3.jpg
-    :width: 600px
+    :width: 780px
     :align: center
 
 Преузету слику сачувај под именом Kula

@@ -1,7 +1,6 @@
 courseId: kurs-treci-ikt
 lang: sr-Cyrl
 title: Рачунарска графика за трећи разред гимназије
-nav_link: https://petlja.org/kurs/487
 description:
   longDescription: |
     Овај курс је намењен ученицима 3. разреда природног смера гимназије за предмет Рачунарство и информатика. 
@@ -139,11 +138,6 @@ lessons:
         file: 7_vez.rst
         description: #opciono
         guid: 8912ebb0-cd77-44f3-a971-0d4fc39780f5
-archived-lessons:
-  - guid: a5bee795-4f08-429a-8059-de60ec3c12d0
-  - guid: be334505-9915-47f7-8df7-854aa194fde8
-  - guid: 52179839-3357-4735-90ed-9cc0de0d4dbe
-
 
 
 

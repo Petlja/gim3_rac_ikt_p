@@ -10,7 +10,7 @@
 
     **Вежба 1.**
 
-    Преузми слику са `линка <../../_images/vodenica.jpg>`_: 
+    Преузми слику 
 
     .. image:: ../../_images/Slika6.jpg
         :width: 780px
@@ -25,7 +25,7 @@
 
     **Вежба 2.**
 
-    Преузети слику са `овог линка <../../_images/toranj.jpg>`_: 
+    Преузети слику 
 
     .. image:: ../../_images/Slika3.jpg
         :width: 780px

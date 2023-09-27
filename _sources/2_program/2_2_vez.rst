@@ -21,7 +21,7 @@
 
     **Вежба 2.**
 
-    Преузети слику са `линкa <../../_images/spomenik.jpg>`_: 
+    Преузети слику 
 
     .. image:: ../../_images/Slika5.jpg
         :width: 780px
